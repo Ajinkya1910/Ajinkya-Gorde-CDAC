@@ -1,0 +1,196 @@
+    1  cd /SoftDev/Foundations/C
+    2  ll
+    3  mkdir System
+    4  cd System/
+    5  vi syssvctest.c
+    6  cc -o syssvctest syssvctest.c 
+    7  ./syssvctest Jack Jill John
+    8  ./syssvctest Jeff Jack and Jill John
+    9  ./syssvctest Jeff "Jack and Jill" John
+   10  vi syssvctest.c
+   11  cc -S -masm=intel syssvctest.c
+   12  bi syssvctest.s
+   13  vi syssvctest.s
+   14  ./syssvctest Jeff Jack and Jill John
+   15  cc -o syssvctest syssvctest.c 
+   16  ./syssvctest Jack Jill John
+   17  vi syssvctest.s
+   18  vi syssvctest.c
+   19  cc -m32 -o syssvctest syssvctest.o
+   20  cc -m32 -o syssvctest syssvctest.c
+   21  ./syssvctest Jack Jill John
+   22  cp syssvctest.c ~/Shared/Temp/
+   23  vi syssvctest.c
+   24  cc -o syssvctest syssvctest.c 
+   25  ./syssvctest Jack Jill John
+   26  cc -m32 -o syssvctest syssvctest.c
+   27  ./syssvctest Jack Jill John
+   28  cp syssvctest.c ~/Shared/Temp/
+   29  vi syssvctest.c
+   30  cc -o syssvctest syssvctest.c 
+   31  vi syssvctest.c
+   32  cc -o syssvctest syssvctest.c 
+   33  ./syssvctest Jack Jill John
+   34  cc -m32 -o syssvctest syssvctest.c
+   35  ./syssvctest Jack Jill John
+   36  vi syssvctest.c
+   37  kill -l
+   38  vi signaltest.c
+   39  cc -o signaltest signaltest.c 
+   40  ./signaltest 
+   41  vi signaltest.c
+   42  cc -o signaltest signaltest.c 
+   43  ./signaltest 
+   44  kill -l
+   45  vi signaltest.c
+   46  cc -o signaltest signaltest.c 
+   47  ./signaltest 
+   48  echo $?
+   49  vi signaltest.c
+   50  cc -o signaltest signaltest.c 
+   51  ./signaltest 
+   52  vi signaltest.c
+   53  cc -o signaltest signaltest.c 
+   54  ./signaltest 
+   55  vi signaltest.c
+   56  cc -o signaltest signaltest.c 
+   57  ./signaltest 
+   58  man sigaction
+   59  history > cmd-28-09-2019.txt
+    1  cd /SoftDev/Foundations/C
+    2  ll
+    3  mkdir System
+    4  cd System/
+    5  vi syssvctest.c
+    6  cc -o syssvctest syssvctest.c 
+    7  ./syssvctest Jack Jill John
+    8  ./syssvctest Jeff Jack and Jill John
+    9  ./syssvctest Jeff "Jack and Jill" John
+   10  vi syssvctest.c
+   11  cc -S -masm=intel syssvctest.c
+   12  bi syssvctest.s
+   13  vi syssvctest.s
+   14  ./syssvctest Jeff Jack and Jill John
+   15  cc -o syssvctest syssvctest.c 
+   16  ./syssvctest Jack Jill John
+   17  vi syssvctest.s
+   18  vi syssvctest.c
+   19  cc -m32 -o syssvctest syssvctest.o
+   20  cc -m32 -o syssvctest syssvctest.c
+   21  ./syssvctest Jack Jill John
+   22  cp syssvctest.c ~/Shared/Temp/
+   23  vi syssvctest.c
+   24  cc -o syssvctest syssvctest.c 
+   25  ./syssvctest Jack Jill John
+   26  cc -m32 -o syssvctest syssvctest.c
+   27  ./syssvctest Jack Jill John
+   28  cp syssvctest.c ~/Shared/Temp/
+   29  vi syssvctest.c
+   30  cc -o syssvctest syssvctest.c 
+   31  vi syssvctest.c
+   32  cc -o syssvctest syssvctest.c 
+   33  ./syssvctest Jack Jill John
+   34  cc -m32 -o syssvctest syssvctest.c
+   35  ./syssvctest Jack Jill John
+   36  vi syssvctest.c
+   37  kill -l
+   38  vi signaltest.c
+   39  cc -o signaltest signaltest.c 
+   40  ./signaltest 
+   41  vi signaltest.c
+   42  cc -o signaltest signaltest.c 
+   43  ./signaltest 
+   44  kill -l
+   45  vi signaltest.c
+   46  cc -o signaltest signaltest.c 
+   47  ./signaltest 
+   48  echo $?
+   49  vi signaltest.c
+   50  cc -o signaltest signaltest.c 
+   51  ./signaltest 
+   52  vi signaltest.c
+   53  cc -o signaltest signaltest.c 
+   54  ./signaltest 
+   55  vi signaltest.c
+   56  cc -o signaltest signaltest.c 
+   57  ./signaltest 
+   58  man sigaction
+   59  history > cmd-28-09-2019.txt
+   60  cd ..
+   61  cp -r System/ ~/Shared/Temp/Foundations/C
+   62  cd System/
+   63  vi strmiotest.c
+   64  cc -o strmiotest strmiotest.c 
+   65  ./strmiotest 
+   66  ./strmiotest first.txt
+   67  ./strmiotest first.txt second.txt
+   68  vi strmiotest.c
+   69  cc -o strmiotest strmiotest.c 
+   70  ./strmiotest 
+   71  ./strmiotest first.txt second.txt
+   72  cp signaltest.c first.txt
+   73  ./strmiotest first.txt second.txt
+   74  ll
+   75  ./strmiotest first.txt second.txt
+   76  rm second.txt 
+   77  vi encbuf.c
+   78  cc -c encbuf.c 
+   79  vi strmiotest.c
+   80  ulimit -s
+   81  ulimit -s 10240
+   82  ulimit -s
+   83  vi strmiotest.c
+   84  cc -o strmiotest strmiotest.c encbuf.o
+   85  ./strmiotest first.txt second.txt
+   86  ll
+   87  vi second.txt 
+   88  ./strmiotest second.txt third.txt 128
+   89  vi third.txt 
+   90  cp strmiotest.c memmapiotest.c
+   91  vi memmapiotest.c 
+   92  man fstat
+   93  vi memmapiotest.c 
+   94  man mmap
+   95  vi revbuf.c
+   96  cc -c revbuf.c 
+   97  cc -o memmapiotest memmapiotest.c revbuf.o
+   98  vi first.txt 
+   99  ./memmapiotest 
+  100  ./memmapiotest first.txt 
+  101  vi first.txt 
+  102  ./memmapiotest first.txt 
+  103  vi first.txt 
+  104  cc -shared -o librevbuf.so revbuf.c
+  105  ll
+  106  cc -o memmapiotest memmapiotest.c librevbuf.so 
+  107  ./memmapiotest first.txt 
+  108  cp librevbuf.so /usr/lib64
+  109  sudo cp librevbuf.so /usr/lib64
+  110  ./memmapiotest first.txt 
+  111  cc -o memmapiotest memmapiotest.c -lrevbuf
+  112  ./memmapiotest first.txt 
+  113  rm /usr/lib64/librevbuf.so 
+  114  sudo rm /usr/lib64/librevbuf.so 
+  115  ./memmapiotest first.txt 
+  116  cc -o memmapiotest memmapiotest.c -lrevbuf
+  117  export LD_LIBRARY_PATH=.
+  118  ./memmapiotest first.txt 
+  119  cc -o memmapiotest memmapiotest.c librevbuf.so 
+  120  ./memmapiotest first.txt 
+  121  cc -shared -o libencbuf.so encbuf.c
+  122  cc -fPIC -shared -o libencbuf.so encbuf.c
+  123  vi encbuf.c 
+  124  cc -shared -o libencbuf.so encbuf.c
+  125  vi encbuf.c 
+  126  cc -shared -o libencbuf.so encbuf.c
+  127  vi encbuf.c 
+  128  vi revbuf.c 
+  129  vi encbuf.c 
+  130  cc -fPIC -shared -o libencbuf.so encbuf.c
+  131  cc -o strmiotest.c libencbuf.so 
+  132  vi strmiotest 
+  133  cp /SoftDev/N0819/Foundations/UNIX/Basics/strmiotest.c .
+  134  vi strmiotest.c 
+  135  cc -o strmiotest strmiotest.c libencbuf.so 
+  136  ./strmiotest first.txt second.txt 
+  137  history >> cmd-28-09-2019.txt 

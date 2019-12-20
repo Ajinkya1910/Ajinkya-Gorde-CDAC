@@ -1,0 +1,26 @@
+    1  cd /SoftDev/Foundations/C/Machine/
+    2  ll
+    3  vi myccproc.s 
+    4  as -o myccproc.o myccproc.s
+    5  vi proctest2.c 
+    6  cc -o proctest2 proctest2.c myccproc.o
+    7  ./proctest2
+    8  echo $?
+    9  cp myccproc.s ~/Shared/Temp/Foundations/C/Machine/
+   10  cp proctest2.c ~/Shared/Temp/Foundations/C/Machine/
+   11  cd ..
+   12  where is Basics
+   13  whereis Basics
+   14  cd C/Basics/
+   15  ll
+   16  cc -S hello.c
+   17  as -o hello.o hello.s
+   18  ld -o hello hello.o /usr/lib64/crt*.o -lc --dynamic-linker /lib64/ld-2.17.so 
+   19  ./hello 
+   20  vi variabletest.c 
+   21  cc -o variabletest variabletest.c 
+   22  ./variabletest 
+   23  vi arraytest.c 
+   24  cc -o arraytest arraytest.c 
+   25  ./arraytest 
+   26  history > cmd-25-09-2019.txt

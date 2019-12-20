@@ -1,0 +1,84 @@
+    1  cd /SoftDev/Foundations/C++/Classes/
+    2  vi classtest1.cpp 
+    3  c++ -o classtest1 classtest1.cpp 
+    4  ./classtest1 
+    5  cp classtest1.cpp classtest2.cpp
+    6  vi classtest2.cpp 
+    7  c++ -o classtest2 classtest2.cpp
+    8  ./classtest2
+    9  vi classtest2.cpp 
+   10  c++ -o classtest2 classtest2.cpp
+   11  ./classtest2
+   12  vi classtest2.cpp 
+   13  c++ -o classtest2 classtest2.cpp
+   14  ./classtest2
+   15  vi classtest2.cpp 
+   16  c++ -o classtest2 classtest2.cpp
+   17  ./classtest2
+   18  vi classtest2.cpp 
+   19  c++ -o classtest2 classtest2.cpp
+   20  ./classtest2
+   21  vi classtest2.cpp 
+   22  c++ -o classtest2 classtest2.cpp
+   23  ./classtest2
+   24  vi classtest2.cpp 
+   25  c++ -o classtest2 classtest2.cpp
+   26  vi classtest2.cpp 
+   27  c++ -o classtest2 classtest2.cpp
+   28  vi classtest2.cpp 
+   29  c++ -o classtest2 classtest2.cpp
+   30  ./classtest2
+   31  vi classtest2.cpp 
+   32  cp classtest2.cpp classtest3.cpp
+   33  vi classtest3.cpp 
+   34  c++ -o classtest2 classtest3.cpp 
+   35  vi classtest3.cpp 
+   36  c++ -o classtest3 classtest3.cpp 
+   37  ./classtest3
+   38  vi classtest3.cpp 
+   39  c++ -o classtest3 classtest3.cpp 
+   40  ./classtest3
+   41  vi classtest3.cpp 
+   42  c++ -o classtest3 classtest3.cpp 
+   43  ./classtest3
+   44  vi classtest3.cpp 
+   45  c++ -o classtest3 classtest3.cpp 
+   46  ./classtest3
+   47  vi classtest3.cpp 
+   48  c++ -o classtest3 classtest3.cpp 
+   49  ./classtest3
+   50  vi classtest3.cpp 
+   51  c++ -o classtest3 classtest3.cpp 
+   52  ./classtest3
+   53  vi classtest3.cpp 
+   54  c++ -o classtest3 classtest3.cpp 
+   55  ./classtest3
+   56  vi classtest3.cpp 
+   57  c++ -o classtest3 classtest3.cpp 
+   58  ./classtest3
+   59  cp classtest3.cpp objreftest.cpp
+   60  vi objreftest.cpp 
+   61  c++ -o objreftest objreftest.cpp 
+   62  vi objreftest.cpp 
+   63  c++ -o objreftest objreftest.cpp 
+   64  ./objreftest 
+   65  vi objreftest.cpp 
+   66  c++ -o objreftest objreftest.cpp 
+   67  ./objreftest 
+   68  vi objreftest.cpp 
+   69  c++ -o objreftest objreftest.cpp 
+   70  ./objreftest 
+   71  vi objreftest.cpp 
+   72  c++ -o objreftest objreftest.cpp 
+   73  ./objreftest 
+   74  vi objreftest.cpp 
+   75  c++ -o objreftest objreftest.cpp 
+   76  vi objreftest.cpp 
+   77  c++ -o objreftest objreftest.cpp 
+   78  ./objreftest 
+   79  vi objreftest.cpp 
+   80  c++ -o objreftest objreftest.cpp 
+   81  vi objreftest.cpp 
+   82  c++ -o objreftest objreftest.cpp 
+   83  ./objreftest 
+   84  history > cmd-03-10-2019.txt

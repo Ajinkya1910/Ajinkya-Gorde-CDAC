@@ -1,0 +1,207 @@
+    1  cd /SoftDev/Foundations/C/System/
+    2  vi worker.h
+    3  vi forktest.c
+    4  cc -o forktest forktest.c 
+    5  vi forktest.c
+    6  cc -o forktest forktest.c 
+    7  echo $$
+    8  ./forktest 
+    9  vi forktest.c
+   10  cc -o forktest forktest.c 
+   11  vi forktest.c
+   12  cc -o forktest forktest.c 
+   13  echo $$
+   14  ./forktest 
+   15  vi forktest.c
+   16  cc -o forktest forktest.c 
+   17  ./forktest 
+   18  vi forktest.c
+   19  cc -o forktest forktest.c 
+   20  ./forktest 
+   21  vi forktest.c
+   22  cc -o forktest forktest.c 
+   23  vi forktest.c
+   24  cc -o forktest forktest.c 
+   25  vi forktest.c
+   26  man waitpid
+   27  cc -o forktest forktest.c 
+   28  ./forktest 
+   29  vi threadtest1.c
+   30  cc -o threadtest1 threadtest1.c -lpthread
+   31  ./threadtest1 
+   32  vi threadtest1.c
+   33  cc -o threadtest1 threadtest1.c -lpthread
+   34  ./threadtest1 
+   35  vi threadtest1.c
+   36  cc -o threadtest1 threadtest1.c -lpthread
+   37  ./threadtest1 
+   38  vi threadtest1.c
+   39  cc -o threadtest1 threadtest1.c -lpthread
+   40  vi threadtest1.c
+   41  cc -o threadtest1 threadtest1.c -lpthread
+   42  man pthread_key_create
+   43  vi threadtest1.c
+   44  cc -o threadtest1 threadtest1.c -lpthread
+   45  ./threadtest1 
+   46  vi threadtest1.c
+   47  cp threadtest1.c threadtest2.c
+   48  vi threadtest2.c 
+   49  cc -o threadtest2 threadtest2.c -lpthread
+   50  ./threadtest2
+   51  vi threadtest2.c 
+   52  vi worker.h 
+   53  cc -o threadtest2 threadtest2.c -lpthread
+   54  ./threadtest2
+   55  vi worker.h 
+   56  vi threadtest2.c 
+   57  vi worker.h 
+   58  cc -o threadtest2 threadtest2.c -lpthread
+   59  ./threadtest2
+   60  vi worker.h 
+   61  cc -o threadtest2 threadtest2.c -lpthread
+   62  ./threadtest2
+   63  vi worker.h 
+   64  cc -o threadtest2 threadtest2.c -lpthread
+   65  ./threadtest2
+   66  vi worker.h 
+   67  ./threadtest2
+   68  vi threadtest2.c 
+   69  ./threadtest2
+   70  cc -o threadtest2 threadtest2.c -lpthread
+   71  ./threadtest2
+   72  vi threadtest2.c 
+   73  cc -o threadtest2 threadtest2.c -lpthread
+   74  ./threadtest2
+   75  history > cmd-30-09-2019.txt
+    1  cd /SoftDev/Foundations/C/System/
+    2  vi worker.h
+    3  vi forktest.c
+    4  cc -o forktest forktest.c 
+    5  vi forktest.c
+    6  cc -o forktest forktest.c 
+    7  echo $$
+    8  ./forktest 
+    9  vi forktest.c
+   10  cc -o forktest forktest.c 
+   11  vi forktest.c
+   12  cc -o forktest forktest.c 
+   13  echo $$
+   14  ./forktest 
+   15  vi forktest.c
+   16  cc -o forktest forktest.c 
+   17  ./forktest 
+   18  vi forktest.c
+   19  cc -o forktest forktest.c 
+   20  ./forktest 
+   21  vi forktest.c
+   22  cc -o forktest forktest.c 
+   23  vi forktest.c
+   24  cc -o forktest forktest.c 
+   25  vi forktest.c
+   26  man waitpid
+   27  cc -o forktest forktest.c 
+   28  ./forktest 
+   29  vi threadtest1.c
+   30  cc -o threadtest1 threadtest1.c -lpthread
+   31  ./threadtest1 
+   32  vi threadtest1.c
+   33  cc -o threadtest1 threadtest1.c -lpthread
+   34  ./threadtest1 
+   35  vi threadtest1.c
+   36  cc -o threadtest1 threadtest1.c -lpthread
+   37  ./threadtest1 
+   38  vi threadtest1.c
+   39  cc -o threadtest1 threadtest1.c -lpthread
+   40  vi threadtest1.c
+   41  cc -o threadtest1 threadtest1.c -lpthread
+   42  man pthread_key_create
+   43  vi threadtest1.c
+   44  cc -o threadtest1 threadtest1.c -lpthread
+   45  ./threadtest1 
+   46  vi threadtest1.c
+   47  cp threadtest1.c threadtest2.c
+   48  vi threadtest2.c 
+   49  cc -o threadtest2 threadtest2.c -lpthread
+   50  ./threadtest2
+   51  vi threadtest2.c 
+   52  vi worker.h 
+   53  cc -o threadtest2 threadtest2.c -lpthread
+   54  ./threadtest2
+   55  vi worker.h 
+   56  vi threadtest2.c 
+   57  vi worker.h 
+   58  cc -o threadtest2 threadtest2.c -lpthread
+   59  ./threadtest2
+   60  vi worker.h 
+   61  cc -o threadtest2 threadtest2.c -lpthread
+   62  ./threadtest2
+   63  vi worker.h 
+   64  cc -o threadtest2 threadtest2.c -lpthread
+   65  ./threadtest2
+   66  vi worker.h 
+   67  ./threadtest2
+   68  vi threadtest2.c 
+   69  ./threadtest2
+   70  cc -o threadtest2 threadtest2.c -lpthread
+   71  ./threadtest2
+   72  vi threadtest2.c 
+   73  cc -o threadtest2 threadtest2.c -lpthread
+   74  ./threadtest2
+   75  history > cmd-30-09-2019.txt
+   76  cd ..
+   77  cp -r System/ ~/Shared/Temp/Foundations/C
+   78  vi threadtest2.c 
+   79  cd System/
+   80  vi threadtest2.c 
+   81  cp forktest.c pipetest.c
+   82  vi pipetest.c 
+   83  cc -o pipetest pipetest.c 
+   84  ./pipetest 
+   85  cp forktest.c semaphoretest.c
+   86  cp semaphoretest.c 
+   87  vi semaphoretest.c 
+   88  cc -o semaphoretest semaphoretest.c 
+   89  ./semaphoretest 
+   90  vi semaphoretest.c 
+   91  cc -o semaphoretest semaphoretest.c 
+   92  ./semaphoretest 
+   93  vi semaphoretest.c 
+   94  man wait
+   95  vi semaphoretest.c 
+   96  cc -o semaphoretest semaphoretest.c 
+   97  ./semaphoretest 
+   98  vi semaphoretest.c 
+   99  cc -o semaphoretest semaphoretest.c 
+  100  ./semaphoretest 
+  101  vi semaphoretest.c 
+  102  cc -o semaphoretest semaphoretest.c 
+  103  ./semaphoretest 
+  104  vi semaphoretest.c 
+  105  cc -o semaphoretest semaphoretest.c 
+  106  ./semaphoretest 
+  107  vi semaphoretest.c 
+  108  cc -o semaphoretest semaphoretest.c 
+  109  ./semaphoretest 
+  110  vi semaphoretest.c 
+  111  man sem_create
+  112  man sem_init
+  113  vi semaphoretest.c 
+  114  cc -o semaphoretest semaphoretest.c -lpthread
+  115  ./semaphoretest 
+  116  vi semaphoretest.c 
+  117  cp threadtest1.c mutextest.c
+  118  vi mutextest.c 
+  119  cc -o mutextest mutextest.c -lpthread
+  120  vi mutextest.c 
+  121  cc -o mutextest mutextest.c -lpthread
+  122  ./mutextest 
+  123  vi mutextest.c 
+  124  cc -o mutextest mutextest.c -lpthread
+  125  ./mutextest 
+  126  vi mutextest.c 
+  127  cc -o mutextest mutextest.c -lpthread
+  128  ./mutextest 
+  129  vi mutextest.c 
+  130  cd ..
+  131  cd System/
+  132  history >> cmd-30-09-2019.txt

@@ -1,0 +1,56 @@
+    1  mkdir Foundations
+    2  cd Foundations/
+    3  mkdir Machine
+    4  cd Machine/
+    5  cd ..
+    6  mkdir C
+    7  mv Machine/ C
+    8  cd M
+    9  cd C/Machine/
+   10  ll
+   11  cp ~/Shared/Support/x64/console.i .
+   12  cp ~/Shared/Support/x64/system.o .
+   13  ll
+   14  vi variabletest1.s
+   15  vi ~/.vimrc 
+   16  vi variabletest1.s
+   17  as -o variabletest1.o variabletest1.s 
+   18  ll
+   19  vi variabletest1.s 
+   20  vi variabletest1.o
+   21  ld -o variabletest1 variabletest1.o system.o 
+   22  ./variabletest1 
+   23  vi variabletest1.s 
+   24  as -o variabletest1.o variabletest1.s 
+   25  ld -o variabletest1 variabletest1.o system.o 
+   26  ./variabletest1 
+   27  vi variabletest1.s 
+   28  as -o variabletest1.o variabletest1.s 
+   29  ld -o variabletest1 variabletest1.o system.o 
+   30  vi variabletest1.s 
+   31  as -o variabletest1.o variabletest1.s 
+   32  ld -o variabletest1 variabletest1.o
+   33  ld -o variabletest1 variabletest1.o system.o 
+   34  ./variabletest1 
+   35  vi variabletest1.s 
+   36  as -o variabletest1.o variabletest1.s 
+   37  ld -o variabletest1 variabletest1.o system.o 
+   38  ./variabletest1 
+   39  vi variabletest1.s 
+   40  as -o variabletest1.o variabletest1.s 
+   41  ./variabletest1 
+   42  vi variabletest1.s 
+   43  as -o variabletest1.o variabletest1.s 
+   44  ld -o variabletest1 variabletest1.o system.o 
+   45  vi variabletest2.s
+   46  as -o variabletest2.o variabletest2.s
+   47  ld -o variabletest2 variabletest2.o system.o
+   48  ./variabletest2
+   49  cp variabletest2.s branchtest1.s
+   50  vi branchtest1.s 
+   51  as -o branchtest1 branchtest1.s 
+   52  ld -o branchtest1 branchtest1.o system.o 
+   53  as -o branchtest1.o branchtest1.s 
+   54  ld -o branchtest1 branchtest1.o system.o 
+   55  ./branchtest1 
+   56  history > cmd-24-09-2019.txt

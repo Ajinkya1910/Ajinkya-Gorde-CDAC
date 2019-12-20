@@ -1,0 +1,95 @@
+    1  cd /SoftDev/Foundations/
+    2  mkdir C++
+    3  cd Functions
+    4  mkdir Functions
+    5  mv Functions/ C++
+    6  cd C++/Functions/
+    7  vi namespacetest.cpp
+    8  cc -o namespacetest namespacetest.cpp 
+    9  c++ -o namespacetest namespacetest.cpp 
+   10  ./namespacetest ; echo $?
+   11  vi namespacetest.cpp
+   12  c++ -o namespacetest namespacetest.cpp 
+   13  ./namespacetest ; echo $?
+   14  vi namespacetest.cpp
+   15  c++ -o namespacetest namespacetest.cpp 
+   16  ./namespacetest ; echo $?
+   17  vi shapes.h
+   18  vi namespacetest.cpp
+   19  c++ -o namespacetest namespacetest.cpp 
+   20  vi namespacetest.cpp
+   21  c++ -o namespacetest namespacetest.cpp 
+   22  vi shapes.h
+   23  c++ -o namespacetest namespacetest.cpp 
+   24  ./namespacetest ; echo $?
+   25  vi shapes.h
+   26  vi namespacetest.cpp
+   27  c++ -o namespacetest namespacetest.cpp 
+   28  ./namespacetest ; echo $?
+   29  objdump -t namespacetest
+   30  vi shapes.h
+   31  vi namespacetest.cpp
+   32  c++ -o namespacetest namespacetest.cpp 
+   33  vi namespacetest.cpp
+   34  c++ -o namespacetest namespacetest.cpp 
+   35  ./namespacetest ; echo $?
+   36  c++filt _ZN4Bank8TransferEiid
+   37  c++filt _ZN4Bank8TransferEiiPd
+   38  vi namespacetest.cpp
+   39  vi shapes.h
+   40  vi namespacetest.cpp
+   41  c++ -o namespacetest namespacetest.cpp 
+   42  vi namespacetest.cpp
+   43  c++ -o namespacetest namespacetest.cpp 
+   44  vi namespacetest.cpp
+   45  c++ -o namespacetest namespacetest.cpp 
+   46  ./namespacetest ; echo $?
+   47  vi namespacetest.cpp
+   48  c++ -o namespacetest namespacetest.cpp 
+   49  vi power.cpp
+   50  c++ -c power.cpp 
+   51  vi functest.cpp
+   52  c++ -o functest functest.cpp power.o
+   53  vi functest.cpp
+   54  c++ -o functest functest.cpp power.o
+   55  vi functest.cpp
+   56  c++ -o functest functest.cpp power.o
+   57  vi power.cpp 
+   58  vi functest.cpp
+   59  objdump -t power.o
+   60  vi functest.cpp
+   61  c++ -o functest functest.cpp power.o
+   62  vi functest.cpp
+   63  c++ -o functest functest.cpp power.o
+   64  ./functest 
+   65  vi functest.cpp
+   66  c++ -o functest functest.cpp power.o
+   67  ./functest 
+   68  objdump -t /SoftDev/Foundations/C/Functions/primes.o
+   69  vi cfunctest.cpp
+   70  c++ -o cfunctest cfunctest.cpp 
+   71  c++ -o cfunctest cfunctest.cpp /SoftDev/Foundations/C/Functions/primes.o
+   72  vi cfunctest.cpp
+   73  c++ -o cfunctest cfunctest.cpp /SoftDev/Foundations/C/Functions/primes.o
+   74  ./cfunctest 
+   75  cp functest.cpp defargtest.cpp
+   76  vi defargtest.cpp 
+   77  c++ -o defargtest defargtest.cpp power.o
+   78  vi defargtest.cpp 
+   79  c++ -o defargtest defargtest.cpp power.o
+   80  ./defargtest 
+   81  vi defargtest.cpp 
+   82  cp defargtest.cpp funcovldtest.cpp
+   83  vi funcovldtest.cpp 
+   84  c++ -o funcovldtest funcovldtest.cpp power.o
+   85  vi funcovldtest.cpp 
+   86  c++ -o funcovldtest funcovldtest.cpp power.o
+   87  ./funcovldtest 
+   88  vi funcovldtest.cpp 
+   89  c++ -o funcovldtest funcovldtest.cpp power.o
+   90  ./funcovldtest 
+   91  vi funcovldtest.cpp 
+   92  vi reftypetest.cpp
+   93  c++ -o reftypetest reftypetest.cpp 
+   94  ./reftypetest 
+   95  history > cmd-01-10-2019.txt

@@ -1,0 +1,27 @@
+    1  cd /SoftDev/Foundations/C++/Functions/
+    2  vi throwtest.cpp
+    3  cc -o throwtest throwtest.cpp 
+    4  c++ -o throwtest throwtest.cpp 
+    5  ./throwtest 
+    6  vi throwtest.cpp
+    7  c++ -o throwtest throwtest.cpp 
+    8  ./throwtest 
+    9  vi throwtest.cpp
+   10  c++ -o throwtest throwtest.cpp 
+   11  ./throwtest 
+   12  vi throwtest.cpp
+   13  cp throwtest.cpp trycatchtest1.cpp
+   14  vi trycatchtest1.cpp 
+   15  c++ -o trycatchtest1 trycatchtest1.cpp 
+   16  ./trycatchtest1 
+   17  vi trycatchtest1.cpp 
+   18  ./trycatchtest1 
+   19  vi trycatchtest1.cpp 
+   20  c++ -o trycatchtest1 trycatchtest1.cpp 
+   21  ./trycatchtest1 
+   22  cp throwtest.cpp trycatchtest2.cpp
+   23  vi trycatchtest2.cpp 
+   24  c++ -o trycatchtest2 trycatchtest2.cpp 
+   25  ./trycatchtest2
+   26  pwd
+   27  history > cmd-02-10-2019.txt 

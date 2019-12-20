@@ -1,0 +1,12 @@
+    1  cd /SoftDev/Foundations/C/System/
+    2  vi shobjdltest.c
+    3  cc -o shobjdltest shobjdltest.c 
+    4  cc -o shobjdltest shobjdltest.c -ldl
+    5  man dlopen
+    6  ./shobjdltest 
+    7  ./shobjdltest ./libxyz.so
+    8  ./shobjdltest libm.so
+    9  ./shobjdltest ./libencbuf.so 
+   10  ./shobjdltest ./librevbuf.so 
+   11  vi shobjdltest.c
+   12  history > cmd-29-09-2019.txt 

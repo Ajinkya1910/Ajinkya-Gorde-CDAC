@@ -1,0 +1,40 @@
+    1  cd /SoftDev/Foundations/C/Basics/
+    2  ll
+    3  cp arraytest.c iftest.c
+    4  vi iftest.c 
+    5  cc -o iftest iftest.c 
+    6  ./iftest 
+    7  vi iftest.c 
+    8  cc -o iftest iftest.c 
+    9  ./iftest 
+   10  vi ifelsetest.c
+   11  cc -o ifelsetest ifelsetest.c 
+   12  ./ifelsetest 
+   13  cp ifelsetest.c switchtest.c
+   14  vi switchtest.c 
+   15  cc -o switchtest switchtest.c 
+   16  ./switchtest 
+   17  vi dowhiletest.c
+   18  cc -o dowhiletest dowhiletest.c 
+   19  ./dowhiletest 
+   20  vi dowhiletest.c
+   21  vi whiletest.c
+   22  cc -o whiletest whiletest.c 
+   23  ./whiletest 
+   24  vi fortest.c
+   25  cc -o fortest1 fortest.c 
+   26  ./fortest1 
+   27  vi fortest.c
+   28  cc -o fortest1 fortest.c 
+   29  ./fortest1 
+   30  cc -D_SQUARES -o fortest2 fortest.c 
+   31  ./fortest2
+   32  vi fortest.c
+   33  vi whiletest.c
+   34  vi dowhiletest.c 
+   35  cd ..
+   36  cp -r Basics/ ~/Shared/Temp/Foundations/C/
+   37  mkdir Functions
+   38  cd Functions/
+   39  cd ../Basics/
+   40  history > cmd-26-09-2019.txt 

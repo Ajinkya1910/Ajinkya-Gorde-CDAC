@@ -1,0 +1,38 @@
+    1  cd /SoftDev/Foundations/C++/Inheritance/
+    2  vi payroll2.h payroll3.h
+    3  cp payroll2.h payroll3.h
+    4  vi payroll3.h 
+    5  vi unsafecasttest.cpp
+    6  vi payroll3.h 
+    7  vi unsafecasttest.cpp
+    8  c++ -o unsafecasttest unsafecasttest.cpp 
+    9  ./unsafecasttest 
+   10  vi unsafecasttest.cpp
+   11  c++ -o unsafecasttest unsafecasttest.cpp 
+   12  vi unsafecasttest.cpp
+   13  c++ -o unsafecasttest unsafecasttest.cpp 
+   14  ./unsafecasttest 
+   15  vi unsafecasttest.cpp
+   16  c++ -o unsafecasttest unsafecasttest.cpp 
+   17  vi unsafecasttest.cpp
+   18  c++ -o unsafecasttest unsafecasttest.cpp 
+   19  vi unsafecasttest.cpp
+   20  c++ -o unsafecasttest unsafecasttest.cpp 
+   21  ./unsafecasttest 
+   22  vi unsafecasttest.cpp
+   23  c++ -o unsafecasttest unsafecasttest.cpp 
+   24  vi unsafecasttest.cpp
+   25  c++ -o unsafecasttest unsafecasttest.cpp 
+   26  vi unsafecasttest.cpp
+   27  c++ -o unsafecasttest unsafecasttest.cpp 
+   28  vi unsafecasttest.cpp
+   29  c++ -o unsafecasttest unsafecasttest.cpp 
+   30  ./unsafecasttest 
+   31  vi banking1.h
+   32  vi banking1.cpp
+   33  c++ -c banking1.cpp 
+   34  vi banking1.cpp
+   35  c++ -c banking1.cpp 
+   36  vi banking1.cpp
+   37  c++ -c banking1.cpp 
+   38  history > cmd-05-10-2019.txt

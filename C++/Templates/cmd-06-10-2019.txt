@@ -1,0 +1,56 @@
+    1  cd /SoftDev/Foundations/C++/Inheritance/
+    2  vi mivitest.cpp 
+    3  c++ -o mivitest mivitest.cpp 
+    4  ./mivitest 
+    5  vi mivitest.cpp 
+    6  c++ -o mivitest mivitest.cpp 
+    7  ./mivitest 
+    8  vi mivitest.cpp 
+    9  cd ..
+   10  mkdir Templates
+   11  cd Templates/
+   12  vi functmplttest1.cpp
+   13  c++ -o functmplttest1 functmplttest1.cpp 
+   14  ./functmplttest1 
+   15  vi functmplttest1.cpp
+   16  c++ -o functmplttest1 functmplttest1.cpp 
+   17  vi functmplttest1.cpp
+   18  c++ -o functmplttest1 functmplttest1.cpp 
+   19  ./functmplttest1 
+   20  vi functmplttest1.cpp
+   21  c++ -o functmplttest1 functmplttest1.cpp 
+   22  objdump -t functmplttest1
+   23  vi functmplttest1.cpp
+   24  c++ -o functmplttest1 functmplttest1.cpp 
+   25  ./functmplttest1 
+   26  vi functmplttest1.cpp
+   27  vi functmplttest2.cpp
+   28  c++ -o functmplttest2 functmplttest2.cpp 
+   29  vi functmplttest1.cpp
+   30  vi functmplttest2.cpp
+   31  c++ -o functmplttest2 functmplttest2.cpp 
+   32  vi functmplttest1.cpp
+   33  vi functmplttest2.cpp
+   34  c++ -o functmplttest2 functmplttest2.cpp 
+   35  vi functmplttest1.cpp
+   36  vi functmplttest2.cpp
+   37  c++ -o functmplttest2 functmplttest2.cpp 
+   38  ./functmplttest2
+   39  vi functmplttest2.cpp
+   40  c++ -o functmplttest2 functmplttest2.cpp 
+   41  ./functmplttest2
+   42  vi functmplttest2.cpp
+   43  c++ -o functmplttest2 functmplttest2.cpp 
+   44  ./functmplttest2
+   45  cp ../Classes/newdeltest.cpp interval.h
+   46  vi interval.h 
+   47  vi functmplttest2.cpp 
+   48  c++ -o functmplttest2 functmplttest2.cpp 
+   49  vi functmplttest2.cpp 
+   50  vi interval.h 
+   51  c++ -o functmplttest2 functmplttest2.cpp 
+   52  ./functmplttest2
+   53  vi interval.h 
+   54  c++ -o functmplttest2 functmplttest2.cpp 
+   55  ./functmplttest2
+   56  history > cmd-06-10-2019.txt

@@ -1,0 +1,48 @@
+    1  cd /SoftDev/Foundations/C/Functions/
+    2  vi primes.c
+    3  cc -c primes.c 
+    4  objdump -t primes.o
+    5  vi functest1.c
+    6  cc -o functest1 functest1.c 
+    7  cc -o functest1 functest1.c primes.o
+    8  ./functest1 
+    9  vi functest1.c
+   10  cc -o functest1 functest1.c primes.o
+   11  vi functest1.c
+   12  cc -o functest1 functest1.c primes.o
+   13  ./functest1 
+   14  vi functest1.c
+   15  cc -o functest1 functest1.c primes.o
+   16  vi box.h
+   17  vi box.c
+   18  cc -c box.c
+   19  vi functest2.c
+   20  cc -o functest2 functest2.c
+   21  cc -o functest2 functest2.c box.o
+   22  ./functest2
+   23  vi box.h
+   24  vi box.c
+   25  cc -c box.c
+   26  cc -o functest2 functest2.c box.o
+   27  ./functest2
+   28  vi functest2.c
+   29  cc -D_NEWBOX -o functest3 functest2.c box.o
+   30  ./functest3
+   31  vi functest2.c
+   32  cc -D_NEWBOX -o functest3 functest2.c box.o
+   33  ./functest
+   34  12 8 7
+   35  ./functest
+   36  ./functest3
+   37  vi functest2.c
+   38  cc -o functest2 functest2.c box.o
+   39  ./functest2
+   40  cc -D_NEWBOX -o functest3 functest2.c box.o
+   41  ./functest3
+   42  vi udttest.c
+   43  cc -o udttest udttest.c 
+   44  ./udttest 
+   45  vi udttest.c
+   46  cd -r .. ~/Shared/Temp/Foundations/C
+   47  cp -r .. ~/Shared/Temp/Foundations/C
+   48  history > cmd-26-09-2019.txt

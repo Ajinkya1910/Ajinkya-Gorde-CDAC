@@ -1,0 +1,42 @@
+    1  cd /SoftDev/Foundations/C++/Templates/
+    2  mkdir STL
+    3  cd STL/
+    4  cp ../interval.h .
+    5  vi interval.h 
+    6  vi vectortest.cpp
+    7  c++ -o vectortest vectortest.cpp 
+    8  vi vectortest.cpp
+    9  c++ -o vectortest vectortest.cpp 
+   10  vi vectortest.cpp
+   11  c++ -o vectortest vectortest.cpp 
+   12  ./vectortest 
+   13  cp vectortest.cpp listtest.cpp
+   14  vi listtest.cpp 
+   15  c++ -o listtest listtest.cpp 
+   16  vi listtest.cpp 
+   17  c++ -o listtest listtest.cpp 
+   18  ./listtest 
+   19  cp vectortest.cpp dequetest.cpp
+   20  vi dequetest.cpp 
+   21  c++ -o dequetest dequetest.cpp 
+   22  ./dequetest 
+   23  cp vectortest.cpp settest.cpp
+   24  vi settest.cpp 
+   25  c++ -o settest settest.cpp 
+   26  ./settest 
+   27  vi settest.cpp 
+   28  c++ -o settest settest.cpp 
+   29  ./settest 
+   30  cp settest.cpp maptest.cpp
+   31  vi maptest.cpp 
+   32  c++ -o maptest maptest.cpp 
+   33  vi maptest.cpp 
+   34  c++ -o maptest maptest.cpp 
+   35  ./maptest 
+   36  vi maptest.cpp 
+   37  c++ -o maptest maptest.cpp 
+   38  ./maptest 
+   39  vi maptest.cpp 
+   40  c++ -o maptest maptest.cpp 
+   41  ./maptest 
+   42  history > cmd-07-10-2019.txt

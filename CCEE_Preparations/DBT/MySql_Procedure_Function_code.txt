@@ -1,0 +1,437 @@
+What is a delimiter
+======================
+Default delimiter is ;
+But you have to first change delimiter to // or any
+Then write mysql code
+in procedue and function and then end the code with new delimiter //
+Then compile and create procedure or function
+And change again to default delimiter
+=================================================
+Loops Demo
+/*
+below is syntax for basic loop, we exit loop using leave label syntax
+based on condition of variable.
+Check syntax of label;
+you can also continue the execution of loop skipping current iteration using continue statement
+*/
+
+
+delimiter //
+
+create procedure loopdemo()
+begin
+declare count int default 0;
+
+x : loop
+
+	if (count > 10) then
+		leave x;
+	end if;
+    set count = count + 1;
+    select count;
+end loop;
+
+end;
+//
+
+delimiter ;
+
+call loopdemo;
+
+While loop
+/*
+Below is demo of while loop
+*/
+
+delimiter //
+create procedure whileloopdemo()
+begin
+declare count int default 0;
+
+while (count < 10) do
+	set count = count + 1;
+    select count;
+end while;
+
+end;
+//
+
+delimiter ;
+call whileloopdemo;
+============
+
+The REPEAT statement executes one or more statements until a search condition is true.
+
+Here is the basic syntax of the REPEAT loop statement:
+
+[begin_label:] REPEAT
+    statement
+UNTIL search_condition
+END REPEAT [end_label]
+
+The REPEAT executes the statement until the search_condition evaluates to true.
+==================================
+
+Procedure / Functions code for IN OUT IN OUT
+
+
+/* How to write a procedure in mysql
+
+We have to declare a variable needed with following syntax
+declare avgsal int default 0
+Above code declared a variable with int type and default value 0, Procedure can take parameter as in, out , in out
+in means as input and read only
+out as output and not initialised
+in out as input first and then as output
+Procedure cannot return value but can do the same by means of 
+out parameter, out parameter are similar to reference variable
+
+*/
+
+/*
+Below is a procedure which take one input in parameter
+The procedure issues a select statement and calculates average sal and sets the same in variable declared as avgsal
+It selects avgsal . hence display the same in output
+*/
+
+delimiter //
+create procedure getavgsal(in vdeptno int)
+begin
+  
+  declare avgsal int DEFAULT 0;
+  select avg(sal) into avgsal from emp where deptno = vdeptno;
+  
+  select avgsal;
+end;
+//
+/*
+Calls above procedure by providing deptno 10 as value
+*/
+
+call getavgsal(10);
+
+
+delimiter //
+/*
+Below procedure takes one input paramater as deptno and returns maximum salary of that dept through an out parameter
+It uses one select into statement which get max sal into out parameter variable and set it, This value is now available for output
+
+*/
+create procedure getmaxsal(in vdeptno int, out maxsal int)
+begin
+
+   select max(sal) into maxsal from emp where deptno = vdeptno;
+
+end;
+//
+
+/*
+Below is a call for procedure 
+==============================
+call getmaxsal(10, @msal);  //@msal is a session variable
+
+select @msal;  			 //outputs variable of session 						variable msal
+*/
+
+delimiter ;
+call getavgsal(10);
+
+delimiter //
+
+=============================================================
+Writing Functions
+/*
+Below code writes a function which returns double value,
+You cannot specify in, out to parameters of function
+You have to specify whether its deterministic or not
+This function can be called from other procedure
+Below we are using Select to call the function
+Go through the syntax
+*/
+
+delimiter //
+create function GetSimpleInterest(principle double, rate double, period int) returns double
+deterministic
+begin
+ declare interest decimal(8,2);
+ set interest = principle * rate * period / 100;
+ return interest;
+end;
+//
+delimiter ;
+
+select GetSimpleInterest(10000, 12, 3);
+
+
+Example of Handling Exceptions
+
+================================
+
+/*
+Below code inserts a dept details in dept table, but uses exception handling features.
+It declares finished variable of in type
+It declares an exit handler , which is for exception or error generated when duplicates are inserted , i.e for no 1062
+So when error no 1062 happens exit handler executes
+which displays message Duplicate values
+else inserts into depts
+and displays message Insertion successfull
+*/
+create procedure insertdept(in vdeptno int, in dname varchar(10), loc varchar(10))
+begin
+  declare finished int default 0;
+  declare avgsal int DEFAULT 0;
+  declare exit handler for 1062 
+  begin
+  select "Duplicate values" as message; 
+  end;
+  insert into dept values (50,'IT', 'PUNE');
+  select "Insertion successfull";
+end;
+//
+
+delimiter ;
+
+//Call the above procedure insertdept
+
+call insertdept(50);
+
+
+Example of cursor code along with exceptions
+============================================
+/*
+This code uses a cursor to travserse through all rows of table
+1) It declares cursor variable cur_emp
+2) Declares an continue handler for handling exception for not found, This handler sets finished variable to 1, when not found exception happens. continue handler let the loop continues
+3) Open the cursor
+4) Fetch the cursor in variables , in loop ( x is loop label)
+   if finishes = 1 , leaves the loop as cursor has no further      
+   rows to display
+5) Else inserts data in log table 
+   
+*/
+delimiter //
+create procedure cursor_demo()
+begin
+declare vename varchar(20);
+declare vempno int;
+declare finished int;  
+declare cur_emp cursor for select empno, ename from emp;
+declare continue handler for not found set finished = 1;
+delete from log;
+open cur_emp;
+x:loop
+
+fetch cur_emp into vempno, vename;
+if finished = 1 then
+leave x;
+end if; 
+insert into log values(vempno, vename); 
+end loop x;
+close cur_emp; 
+end;
+//
+delimiter ;
+
+
+// Displays data in log table
+select * from log;
+=========================================================
+Listing Stored Function
+=======================
+Summary: in this tutorial, you will learn how to show stored functions from databases by using the SHOW FUNCTION STATUS or querying the data dictionary.
+
+Listing stored functions using SHOW FUNCTION STATUS statement
+The SHOW FUNCTION STATUS is like the SHOW PROCEDURE STATUS but for the stored functions.
+
+SHOW FUNCTION STATUS 
+[LIKE 'pattern' | WHERE search_condition];
+
+The SHOW FUNCTION STATUS statement returns all characteristics of stored functions. The following statement shows all stored functions in the current MySQL server:
+
+
+SHOW FUNCTION STATUS;
+Note that the SHOW FUNCTION STATUS only shows the function that you have a privilege to access.
+
+If you just want to show stored functions in a particular database, you can use a WHERE clause in the  SHOW FUNCTION STATUS as shown in the following statement:
+
+SHOW FUNCTION STATUS 
+WHERE search_condition;
+
+SHOW FUNCTION STATUS 
+WHERE db = 'classicmodels';
+
+SHOW FUNCTION STATUS 
+LIKE '%pattern%';
+
+SHOW FUNCTION STATUS LIKE '%Customer%';
+
+Listing stored functions using the data dictionary
+MySQL data dictionary has a routines table that stores information about the stored functions of all databases in the current MySQL server.
+
+SELECT 
+    routine_name
+FROM
+    information_schema.routines
+WHERE
+    routine_type = 'FUNCTION'
+        AND routine_schema = '<database_name>';
+
+SELECT 
+    routine_name
+FROM
+    information_schema.routines
+WHERE
+    routine_type = 'FUNCTION'
+        AND routine_schema = 'classicmodels';
+
+======================================
+Introduction to MySQL DROP FUNCTION statement
+The DROP FUNCTION statement drops a stored function. Here is the syntax of the DROP FUNCTION statement:
+
+DROP FUNCTION [IF EXISTS] function_name;
+In this syntax, you specify the name of the stored function that you want to drop after the DROP FUNCTION keywords.
+
+
+=====================================
+Writing Tiggers
+=====================================
+Home / MySQL Triggers
+MySQL Triggers
+
+?
+In MySQL, a trigger is a stored program invoked automatically in response to an event such as insert, update, or delete that occurs in the associated table. For example, you can define a trigger that is invoked automatically before a new row is inserted into a table.
+
+MySQL supports triggers that are invoked in response to the INSERT, UPDATE or DELETE event.
+
+The SQL standard defines two types of triggers: row-level triggers and statement-level triggers.
+
+A row-level trigger is activated for each row that is inserted, updated, or deleted.  For example, if a table has 100 rows inserted, updated, or deleted, the trigger is automatically invoked 100 times for the 100 rows affected.
+A statement-level trigger is executed once for each transaction regardless of how many rows are inserted, updated, or deleted.
+MySQL supports only row-level triggers. It doesn’t support statement-level triggers.
+
+Advantages of triggers
+Triggers provide another way to check the integrity of data.
+Triggers handle errors from the database layer.
+Triggers give an alternative way to run scheduled tasks. By using triggers, you don’t have to wait for the scheduled events to run because the triggers are invoked automatically before or after a change is made to the data in a table.
+Triggers can be useful for auditing the data changes in tables.
+
+Disadvantages of triggers
+Triggers can only provide extended validations, not all validations. For simple validations, you can use the NOT NULL, UNIQUE, CHECK and FOREIGN KEY constraints.
+Triggers can be difficult to troubleshoot because they execute automatically in the database, which may not invisible to the client applications.
+Triggers may increase the overhead of the MySQL Server.
+Managing MySQL triggers
+
+
+Home / MySQL Triggers / Create Trigger in MySQL
+Create Trigger in MySQL
+
+?
+Summary: in this tutorial, you will learn how to use the MySQL CREATE TRIGGER statement to create a trigger in the database.
+
+Introduction to MySQL CREATE TRIGGER statement
+The CREATE TRIGGER statement creates a new trigger. Here is the basic syntax of the CREATE TRIGGER statement:
+
+1
+2
+3
+4
+CREATE TRIGGER trigger_name
+{BEFORE | AFTER} {INSERT | UPDATE| DELETE }
+ON table_name FOR EACH ROW
+trigger_body;
+In this syntax:
+
+First, specify the name of the trigger that you want to create after the CREATE TRIGGER keywords. Note that the trigger name must be unique within a database.
+Next, specify the trigger action time which can be either BEFORE or AFTER which indicates that the trigger is invoked before or after each row is modified.
+Then, specify the operation that activates the trigger, which can be INSERT, UPDATE, or DELETE.
+After that, specify the name of the table to which the trigger belongs after the ON keyword.
+Finally, specify the statement to execute when the trigger activates. If you want to execute multiple statements, you use the BEGIN END compound statement.
+The trigger body can access the values of the column being affected by the DML statement.
+
+To distinguish between the value of the columns BEFORE and AFTER the DML has fired, you use the NEW and OLD modifiers.
+
+For example, if you update the column description, in the trigger body, you can access the value of the description before the update OLD.description and the new value NEW.description.
+
+The following table illustrates the availability of the OLD and NEW modifiers:
+
+Trigger Event	OLD	NEW
+INSERT	No	Yes
+UPDATE	Yes	Yes
+DELETE	Yes	No
+================================================
+
+
+Sample Codes
+
+MySQL AFTER INSERT triggers are automatically invoked after an insert event occurs on the table.
+
+The following shows the basic syntax of creating a MySQL AFTER INSERT trigger:
+
+CREATE TRIGGER trigger_name
+    AFTER INSERT
+    ON table_name FOR EACH ROW
+        trigger_body
+
+In this syntax:
+
+First, specify the name of the trigger that you want to create after the CREATE TRIGGER keywords.
+
+Second, use AFTER INSERT clause to specify the time to invoke the trigger.
+
+Third, specify the name of the table on which you want to create the trigger after the ON keyword.
+
+Finally, specify the trigger body which consists of one or more statements that execute when the trigger is invoked.
+
+In case the trigger body has multiple statements, you need to use the BEGIN END block and change the default delimiter:
+
+
+DELIMITER $$
+ 
+CREATE TRIGGER trigger_name
+    AFTER INSERT
+    ON table_name FOR EACH ROW
+BEGIN
+    -- statements
+END$$    
+ 
+DELIMITER ;
+
+In an AFTER INSERT trigger, you can access the NEW values but you cannot change them. Also, you cannot access the OLD values because there is no OLD on INSERT triggers.
+
+Create Following Tables
+===========================
+
+
+CREATE TABLE members (
+    id INT AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(255),
+    birthDate DATE,
+    PRIMARY KEY (id)
+);
+
+
+CREATE TABLE reminders (
+    id INT AUTO_INCREMENT,
+    memberId INT,
+    message VARCHAR(255) NOT NULL,
+    PRIMARY KEY (id , memberId)
+);
+
+Create After Insert Trigger
+=================================
+DELIMITER $$
+ 
+CREATE TRIGGER after_members_insert
+AFTER INSERT
+ON members FOR EACH ROW
+BEGIN
+    IF NEW.birthDate IS NULL THEN
+        INSERT INTO reminders(memberId, message)
+        VALUES(new.id,CONCAT('Hi ', NEW.name, ', please update your date of birth.'));
+    END IF;
+END$$
+ 
+DELIMITER ;
+
+

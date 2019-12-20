@@ -1,0 +1,85 @@
+{\rtf1\ansi\ansicpg1252
+{\fonttbl
+{\f1\fswiss\fcharset0\fprq0 Verdana;}
+{\f2\froman\fcharset0\fprq0 Times New Roman;}
+{\f3\fswiss\fcharset128\fprq0 Arial Unicode MS;}
+}
+{\colortbl;
+\red0\green0\blue0;
+}
+{\stylesheet
+{\s1\qc\f2\fs44\ppscheme-3\lang1033\level1 heading 1;}
+{\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033\level2 heading 2;}
+{\s3\li585\fi-225\f2\fs28\ppscheme-1\lang1033\level3 heading 3;}
+{\s4\li900\fi-180\f2\fs24\ppscheme-1\lang1033\level4 heading 4;}
+{\s5\li1260\fi-180\f2\fs20\ppscheme-1\lang1033\level5 heading 5;}
+{\s6\li1620\fi-180\f2\fs20\ppscheme-1\lang1033\level6 heading 6;}
+}
+\pard\plain\ltrpar\s1\qc\f2\fs44\ppscheme-3\lang1033 {\f1\fs40 Agenda\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033\qc {\f1 Managing Indexes\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\pntext\pard\f1\fs32 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs32\pnscheme-1{\pntxtb \'95}}{\f1 Discussion on types of Indexes & usage\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\pntext\pard\f1\fs32 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs32\pnscheme-1{\pntxtb \'95}}{\f1 How to create different types of Indexes\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\pntext\pard\f1\fs32 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs32\pnscheme-1{\pntxtb \'95}}{\f1 Obtaining Index information.\par 
+}\pard\plain\ltrpar\s1\qc\f2\fs44\ppscheme-3\lang1033 {\f1\fs40 Category of Indexes\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\pntext\pard\f1\fs28 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs28\pnscheme-1{\pntxtb \'95}}{\f1\fs28 Category 1\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\f1\fs28 \tab \tab - Single Column or Concatenated\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\f1\fs28 \tab \tab - Unique or Non-Unique\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\f1\fs28 \tab \tab - Function Based\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\pntext\pard\f1\fs28 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs28\pnscheme-1{\pntxtb \'95}}{\f1\fs28 Category 2\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\f1\fs28 \tab \tab - Partitioned }{\f1\fs28 \par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\f1\fs28 \tab \tab - B-Tree\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\f1\fs28 \tab \tab - Bitmap\par 
+}\pard\plain\ltrpar\s1\qc\f2\fs44\ppscheme-3\lang1033 {\f1\fs36 Category 1\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\pntext\pard\f2\fs28 \'95\tab}{\*\pn\pnlvlblt\pnf2\pnfs28\pnscheme-1{\pntxtb \'95}}{\f2\fs28 Single column Index:- A single column index has only one column in the index key\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\f2\fs28 Example:-\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\f2\fs28 \tab \tab SQL>create index indeno on emp(empno);\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\pntext\pard\f2\fs28 \'95\tab}{\*\pn\pnlvlblt\pnf2\pnfs28\pnscheme-1{\pntxtb \'95}}{\f2\fs28 Concatenated Index(Composite):-is created on multiple columns(Max 32)\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\f2\fs28 Example:- SQL>create index idx_desig_sal on emp(desig,sal);\par 
+}\pard\plain\ltrpar\s1\qc\f2\fs44\ppscheme-3\lang1033 {\f2 \par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\pntext\pard\f1\fs28 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs28\pnscheme-1{\pntxtb \'95}}{\f1\fs28 Unique Index:-}{\f1\fs24 Unique indexes guarantee that no two rows of a table have duplicate values in the key column (or columns).\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\pntext\pard\f1\fs28 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs28\pnscheme-1{\pntxtb \'95}}{\f1\fs28 Non-Unique index:-}{\f1\fs24 Nonunique}{\f1\fs24  indexes do not impose this restriction on the column values. \par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\pntext\pard\f1\fs28 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs28\pnscheme-1{\pntxtb \'95}}{\f1\fs28 Function Based Index:-}{\f1\fs24 You can create indexes on functions and expressions that involve one or more columns in the table being indexed. A function-based index pre-computes the value of the function or expression and stores it in the index\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\f1\fs24 Example:-}{\fs24 CREATE INDEX uppercase_idx ON emp (UPPER(}{\fs24 empname}{\fs24 ));}{\f1\fs24 \par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\f1\fs24 \par 
+}\pard\plain\ltrpar\s1\qc\f2\fs44\ppscheme-3\lang1033 {\f1\fs40 Category 2\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\b\f1\fs24 Partitioned Index\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\pntext\pard\f1\fs24 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs24\pnscheme-1{\pntxtb \'95}}{\f1\fs24 Partitioned index are used for large tables to store index entries corresponding to an index in several segments, also allows an index to be spread across many tablespaces.\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\pntext\pard\f1\fs24 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs24\pnscheme-1{\pntxtb \'95}}{\f1\fs24 Partitioned indexes are often used with partitioned tables to improve scalability and manageability.\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\pntext\pard\f1\fs24 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs24\pnscheme-1{\pntxtb \'95}}{\f1\fs24 An Index partition can be created for each table partition.\par 
+}\pard\plain\ltrpar\s1\qc\f2\fs44\ppscheme-3\lang1033 {\f1\fs40 B-Tree Index\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\f1\fs24 Oracle uses B Trees to store indexes to speed up data access. If there are no indexes then you have to do a sequential scan on the data to find a value}{\f2\fs28 . \par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\f2\fs28 Structure of a B-Tree Index\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\f2\fs28 At the top of the index is the root,which contains entries that point to the next level in the in the index.At the next level are branch blocks, which in turn point to the block at the next level in the index.At the lowest level are the leaf nodes, which contains the index entries that point to rows in the table. The leaf nodes are doubly linked to facilitate\par 
+}\pard\plain\ltrpar\s1\qc\f2\fs44\ppscheme-3\lang1033 {\f2 \par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\f1\fs24 The scanning of the index in an ascending as well as descending order of the key values.\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\b\f1\fs24 Format of the index leaf entries\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\f1\fs24 An index entry is made up of the following components.\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\pntext\pard\f1\fs24 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs24\pnscheme-1{\pntxtb \'95}}{\f1\fs24 An entry header,which stores number of columns and locking information.\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\pntext\pard\f1\fs24 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs24\pnscheme-1{\pntxtb \'95}}{\f1\fs24 Key column length-value pair,which define the size of a column in the key followed by the that value for the column.\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\pntext\pard\f1\fs24 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs24\pnscheme-1{\pntxtb \'95}}{\f1\fs24 ROWID of a row,which contains the key values. \par 
+}\pard\plain\ltrpar\s1\qc\f2\fs44\ppscheme-3\lang1033 {\f1\fs36 Effect of DML on an Index\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\f1\fs24 The Oracle Server maintains all the indexes when DML operations are carried out on the table.\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\pntext\pard\f1\fs24 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs24\pnscheme-1{\pntxtb \'95}}{\f1\fs24 Insert operation result in the insertion of an index entry in the appropriate block\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\pntext\pard\f1\fs24 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs24\pnscheme-1{\pntxtb \'95}}{\f1\fs24 Deleting a row results only in a logical deletion of the index entry.the space used by the deleted row is not available for new entries until all the entries in the block are deleted\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\pntext\pard\f1\fs24 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs24\pnscheme-1{\pntxtb \'95}}{\f1\fs24 Updates to the key column result in a logical delete and an Insert to the index. \par 
+}\pard\plain\ltrpar\s1\qc\f2\fs44\ppscheme-3\lang1033 {\f1\fs40 Bitmap Index\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\pntext\pard\f1\fs28 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs28\pnscheme-1{\pntxtb \'95}}{\f1\fs28 Bitmap index are only available with Oracle9i Enterprise Edition.\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\pntext\pard\f1\fs28 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs28\pnscheme-1{\pntxtb \'95}}{\f1\fs28 Are more advantageous than B-Tree index in certain situations\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\f1\fs28 \tab - Values with low cardinality, that is, there are very few distinct values for column. i.e Gender, Marital Status etc.\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\f1\fs28 \tab - When queries often use a combination of multiple WHERE condition involving the OR operator\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\pntext\pard\f1\fs28 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs28\pnscheme-1{\pntxtb \'95}}{\f1\fs28 Data Warehousing is an ideal example.\par 
+}\pard\plain\ltrpar\s1\qc\f2\fs44\ppscheme-3\lang1033 {\f1\fs36 Creating Normal B-Tree Index\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\f1 Syntax:-\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\f1 Create Index ind_lname on Emp(Last_name)\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\f1 PCTFREE 30\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\f1 Storage(Initial 200k,next 200k ,Maxextents 50)\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\f1 Tablespace indtbs;\par 
+}\pard\plain\ltrpar\s1\qc\f2\fs44\ppscheme-3\lang1033 {\f2 Creating Bitmap Index\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\f1 Syntax:-\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\f1 Create Bitmap Index ind_lname on Emp(Last_name)\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\f1 PCTFREE 30\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\f1 Storage(Initial 200k,next 200k,Maxextents 50)\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\f1 Tablespace indtbs;\par 
+}\pard\plain\ltrpar\s2\li270\fi-270\f2\fs32\ppscheme-1\lang1033 {\f1 \par 
+}
+}

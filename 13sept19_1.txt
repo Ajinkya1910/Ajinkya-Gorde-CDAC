@@ -1,0 +1,83 @@
+SQL> cl scr
+
+SQL> create table Student
+  2  (
+  3  rno number(3),
+  4  name varchar2(20),
+  5  age number(2),
+  6  fees number(8, 2)
+  7  );
+
+Table created.
+
+SQL> desc student
+ Name                                                  Null?    Type
+ ----------------------------------------------------- -------- ------------------------------------
+ RNO                                                            NUMBER(3)
+ NAME                                                           VARCHAR2(20)
+ AGE                                                            NUMBER(2)
+ FEES                                                           NUMBER(8,2)
+
+SQL> insert into student values(101, 'AMIT', 22, 99000.00);
+
+1 row created.
+
+SQL> insert into student values(102, 'ANIL', 25, 99000.00);
+
+1 row created.
+
+SQL> insert into student values(102, 'ANIL', 25, 99000.00);
+
+1 row created.
+
+SQL> select * from student;
+
+       RNO NAME                        AGE       FEES                                               
+---------- -------------------- ---------- ----------                                               
+       101 AMIT                         22      99000                                               
+       102 ANIL                         25      99000                                               
+       102 ANIL                         25      99000                                               
+
+SQL> create table test
+  2  (
+  3  id number(3),
+  4  name varchar2(20),
+  5  joindate date
+  6  );
+
+Table created.
+
+SQL> insert into test values(101, 'Amit', '20-aug-99');
+
+1 row created.
+
+SQL> insert into test values(102, 'Anil', '21-aug-99');
+
+1 row created.
+
+SQL> insert into test values(103, 'Amit', '20-feb-99');
+
+1 row created.
+
+SQL> select * from test;
+
+        ID NAME                 JOINDATE                                                            
+---------- -------------------- ----------                                                          
+       101 Amit                 20/08/0099                                                          
+       102 Anil                 21/08/0099                                                          
+       103 Amit                 20/02/0099                                                          
+
+SQL> insert into test values(101, 'Amit', '20-aug-1999');
+
+1 row created.
+
+SQL> select * from test;
+
+        ID NAME                 JOINDATE                                                            
+---------- -------------------- ----------                                                          
+       101 Amit                 20/08/0099                                                          
+       102 Anil                 21/08/0099                                                          
+       103 Amit                 20/02/0099                                                          
+       101 Amit                 20/08/1999                                                          
+
+SQL> spool off

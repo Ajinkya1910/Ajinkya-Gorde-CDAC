@@ -1,0 +1,368 @@
+SQL> cl scr
+
+SQL> desc my_emp
+ Name                                                  Null?    Type
+ ----------------------------------------------------- -------- ------------------------------------
+ EMPNO                                                 NOT NULL NUMBER(4)
+ ENAME                                                          VARCHAR2(10)
+ JOB                                                            VARCHAR2(9)
+ MGR                                                            NUMBER(4)
+ HIREDATE                                                       DATE
+ SAL                                                            NUMBER(7,2)
+ COMM                                                           NUMBER(7,2)
+ DEPTNO                                                         NUMBER(2)
+
+SQL> select * from emp;
+
+     EMPNO ENAME      JOB              MGR HIREDATE          SAL       COMM     DEPTNO              
+---------- ---------- --------- ---------- ---------- ---------- ---------- ----------              
+      7839 KING       PRESIDENT            17/11/1981       5000                    10              
+      7698 BLAKE      MANAGER         7839 01/05/1981       2850                    30              
+      7782 CLARK      MANAGER         7839 09/06/1981       2450                    10              
+      7566 JONES      MANAGER         7839 02/04/1981       2975                    20              
+      7654 MARTIN     SALESMAN        7698 28/09/1981       1250       1400         30              
+      7499 ALLEN      SALESMAN        7698 20/02/1981       1600        300         30              
+      7844 TURNER     SALESMAN        7698 08/09/1981       1500          0         30              
+      7900 JAMES      CLERK           7698 03/12/1981        950                    30              
+      7521 WARD       SALESMAN        7698 22/02/1981       1250        500         30              
+      7902 FORD       ANALYST         7566 03/12/1981       3000                    20              
+      7369 SMITH      CLERK           7902 17/12/1980        800                    20              
+      7788 SCOTT      ANALYST         7566 09/12/1982       3000                    20              
+      7876 ADAMS      CLERK           7788 12/01/1983       1100                    20              
+      7934 MILLER     CLERK           7782 23/01/1982       1300                    10              
+
+14 rows selected.
+
+SQL> select * from my_emp;
+
+     EMPNO ENAME      JOB              MGR HIREDATE          SAL       COMM     DEPTNO              
+---------- ---------- --------- ---------- ---------- ---------- ---------- ----------              
+      7839 KING       PRESIDENT            17/11/1981       5000                    10              
+      7698 BLAKE      MANAGER         7839 01/05/1981       2850                    30              
+      7782 CLARK      MANAGER         7839 09/06/1981       2450                    10              
+      7566 JONES      MANAGER         7839 02/04/1981       2975                    20              
+      7654 MARTIN     SALESMAN        7698 28/09/1981       1250       1400         30              
+      7499 ALLEN      SALESMAN        7698 20/02/1981       1600        300         30              
+      7844 TURNER     SALESMAN        7698 08/09/1981       1500          0         30              
+      7900 JAMES      CLERK           7698 03/12/1981        950                    30              
+      7521 WARD       SALESMAN        7698 22/02/1981       1250        500         30              
+      7902 FORD       ANALYST         7566 03/12/1981       3000                    20              
+      7369 SMITH      CLERK           7902 17/12/1980        800                    20              
+      7788 SCOTT      ANALYST         7566 09/12/1982       3000                    20              
+      7876 ADAMS      CLERK           7788 12/01/1983       1100                    20              
+      7934 MILLER     CLERK           7782 23/01/1982       1300                    10              
+      1000 AMIT       MANAGER         7839 30/04/2010      20000        500         10              
+      1002 ANIL                            30/08/2019      23000                    20              
+      1001 SACHIN                          30/04/2010      20000        500         10              
+
+17 rows selected.
+
+SQL> cl scr
+
+SQL> desc my_emp
+ Name                                                  Null?    Type
+ ----------------------------------------------------- -------- ------------------------------------
+ EMPNO                                                 NOT NULL NUMBER(4)
+ ENAME                                                          VARCHAR2(10)
+ JOB                                                            VARCHAR2(9)
+ MGR                                                            NUMBER(4)
+ HIREDATE                                                       DATE
+ SAL                                                            NUMBER(7,2)
+ COMM                                                           NUMBER(7,2)
+ DEPTNO                                                         NUMBER(2)
+
+SQL> insert into values(1003, 'CHETAN', 'CLERK', 7839, '30-apr-1975', 30000, 3000, 20);
+insert into values(1003, 'CHETAN', 'CLERK', 7839, '30-apr-1975', 30000, 3000, 20)
+            *
+ERROR at line 1:
+ORA-00903: invalid table name 
+
+
+SQL> insert into my_emp values(1003, 'CHETAN', 'CLERK', 7839, '30-apr-1975', 30000, 3000, 20);
+
+1 row created.
+
+SQL> cl scr
+
+SQL> insert into my_emp values(&empno, '&ename', '&job', &mgr, '&hdate', &sal, &comm, &dno);
+Enter value for empno: 1004
+Enter value for ename: LALIT
+Enter value for job: CLERK
+Enter value for mgr: 7839
+Enter value for hdate: 30-apr-1980
+Enter value for sal: 20000
+Enter value for comm: 3000
+Enter value for dno: 30
+old   1: insert into my_emp values(&empno, '&ename', '&job', &mgr, '&hdate', &sal, &comm, &dno)
+new   1: insert into my_emp values(1004, 'LALIT', 'CLERK', 7839, '30-apr-1980', 20000, 3000, 30)
+
+1 row created.
+
+SQL> /
+Enter value for empno: 1005
+Enter value for ename: MANOJ
+Enter value for job: CLERK
+Enter value for mgr: 7839
+Enter value for hdate: 30-jun-2018
+Enter value for sal: 40000
+Enter value for comm: 3000
+Enter value for dno: 30
+old   1: insert into my_emp values(&empno, '&ename', '&job', &mgr, '&hdate', &sal, &comm, &dno)
+new   1: insert into my_emp values(1005, 'MANOJ', 'CLERK', 7839, '30-jun-2018', 40000, 3000, 30)
+
+1 row created.
+
+SQL> select * from my_emp;
+
+     EMPNO ENAME      JOB              MGR HIREDATE          SAL       COMM     DEPTNO              
+---------- ---------- --------- ---------- ---------- ---------- ---------- ----------              
+      7839 KING       PRESIDENT            17/11/1981       5000                    10              
+      7698 BLAKE      MANAGER         7839 01/05/1981       2850                    30              
+      7782 CLARK      MANAGER         7839 09/06/1981       2450                    10              
+      7566 JONES      MANAGER         7839 02/04/1981       2975                    20              
+      7654 MARTIN     SALESMAN        7698 28/09/1981       1250       1400         30              
+      7499 ALLEN      SALESMAN        7698 20/02/1981       1600        300         30              
+      7844 TURNER     SALESMAN        7698 08/09/1981       1500          0         30              
+      7900 JAMES      CLERK           7698 03/12/1981        950                    30              
+      7521 WARD       SALESMAN        7698 22/02/1981       1250        500         30              
+      7902 FORD       ANALYST         7566 03/12/1981       3000                    20              
+      7369 SMITH      CLERK           7902 17/12/1980        800                    20              
+      7788 SCOTT      ANALYST         7566 09/12/1982       3000                    20              
+      7876 ADAMS      CLERK           7788 12/01/1983       1100                    20              
+      7934 MILLER     CLERK           7782 23/01/1982       1300                    10              
+      1000 AMIT       MANAGER         7839 30/04/2010      20000        500         10              
+      1002 ANIL                            30/08/2019      23000                    20              
+      1001 SACHIN                          30/04/2010      20000        500         10              
+      1003 CHETAN     CLERK           7839 30/04/1975      30000       3000         20              
+      1004 LALIT      CLERK           7839 30/04/1980      20000       3000         30              
+      1005 MANOJ      CLERK           7839 30/06/2018      40000       3000         30              
+
+20 rows selected.
+
+SQL> commit;
+
+Commit complete.
+
+SQL> select * from my_emp;
+
+     EMPNO ENAME      JOB              MGR HIREDATE          SAL       COMM     DEPTNO              
+---------- ---------- --------- ---------- ---------- ---------- ---------- ----------              
+      7839 KING       PRESIDENT            17/11/1981       5000                    10              
+      7698 BLAKE      MANAGER         7839 01/05/1981       2850                    30              
+      7782 CLARK      MANAGER         7839 09/06/1981       2450                    10              
+      7566 JONES      MANAGER         7839 02/04/1981       2975                    20              
+      7654 MARTIN     SALESMAN        7698 28/09/1981       1250       1400         30              
+      7499 ALLEN      SALESMAN        7698 20/02/1981       1600        300         30              
+      7844 TURNER     SALESMAN        7698 08/09/1981       1500          0         30              
+      7900 JAMES      CLERK           7698 03/12/1981        950                    30              
+      7521 WARD       SALESMAN        7698 22/02/1981       1250        500         30              
+      7902 FORD       ANALYST         7566 03/12/1981       3000                    20              
+      7369 SMITH      CLERK           7902 17/12/1980        800                    20              
+      7788 SCOTT      ANALYST         7566 09/12/1982       3000                    20              
+      7876 ADAMS      CLERK           7788 12/01/1983       1100                    20              
+      7934 MILLER     CLERK           7782 23/01/1982       1300                    10              
+      1000 AMIT       MANAGER         7839 30/04/2010      20000        500         10              
+      1002 ANIL                            30/08/2019      23000                    20              
+      1001 SACHIN                          30/04/2010      20000        500         10              
+      1003 CHETAN     CLERK           7839 30/04/1975      30000       3000         20              
+      1004 LALIT      CLERK           7839 30/04/1980      20000       3000         30              
+      1005 MANOJ      CLERK           7839 30/06/2018      40000       3000         30              
+
+20 rows selected.
+
+SQL> update my_emp set sal = sal + 10000, comm = 2000;
+
+20 rows updated.
+
+SQL> select * from my_emp;
+
+     EMPNO ENAME      JOB              MGR HIREDATE          SAL       COMM     DEPTNO              
+---------- ---------- --------- ---------- ---------- ---------- ---------- ----------              
+      7839 KING       PRESIDENT            17/11/1981      15000       2000         10              
+      7698 BLAKE      MANAGER         7839 01/05/1981      12850       2000         30              
+      7782 CLARK      MANAGER         7839 09/06/1981      12450       2000         10              
+      7566 JONES      MANAGER         7839 02/04/1981      12975       2000         20              
+      7654 MARTIN     SALESMAN        7698 28/09/1981      11250       2000         30              
+      7499 ALLEN      SALESMAN        7698 20/02/1981      11600       2000         30              
+      7844 TURNER     SALESMAN        7698 08/09/1981      11500       2000         30              
+      7900 JAMES      CLERK           7698 03/12/1981      10950       2000         30              
+      7521 WARD       SALESMAN        7698 22/02/1981      11250       2000         30              
+      7902 FORD       ANALYST         7566 03/12/1981      13000       2000         20              
+      7369 SMITH      CLERK           7902 17/12/1980      10800       2000         20              
+      7788 SCOTT      ANALYST         7566 09/12/1982      13000       2000         20              
+      7876 ADAMS      CLERK           7788 12/01/1983      11100       2000         20              
+      7934 MILLER     CLERK           7782 23/01/1982      11300       2000         10              
+      1000 AMIT       MANAGER         7839 30/04/2010      30000       2000         10              
+      1002 ANIL                            30/08/2019      33000       2000         20              
+      1001 SACHIN                          30/04/2010      30000       2000         10              
+      1003 CHETAN     CLERK           7839 30/04/1975      40000       2000         20              
+      1004 LALIT      CLERK           7839 30/04/1980      30000       2000         30              
+      1005 MANOJ      CLERK           7839 30/06/2018      50000       2000         30              
+
+20 rows selected.
+
+SQL> rollback;
+
+Rollback complete.
+
+SQL> select * from my_emp;
+
+     EMPNO ENAME      JOB              MGR HIREDATE          SAL       COMM     DEPTNO              
+---------- ---------- --------- ---------- ---------- ---------- ---------- ----------              
+      7839 KING       PRESIDENT            17/11/1981       5000                    10              
+      7698 BLAKE      MANAGER         7839 01/05/1981       2850                    30              
+      7782 CLARK      MANAGER         7839 09/06/1981       2450                    10              
+      7566 JONES      MANAGER         7839 02/04/1981       2975                    20              
+      7654 MARTIN     SALESMAN        7698 28/09/1981       1250       1400         30              
+      7499 ALLEN      SALESMAN        7698 20/02/1981       1600        300         30              
+      7844 TURNER     SALESMAN        7698 08/09/1981       1500          0         30              
+      7900 JAMES      CLERK           7698 03/12/1981        950                    30              
+      7521 WARD       SALESMAN        7698 22/02/1981       1250        500         30              
+      7902 FORD       ANALYST         7566 03/12/1981       3000                    20              
+      7369 SMITH      CLERK           7902 17/12/1980        800                    20              
+      7788 SCOTT      ANALYST         7566 09/12/1982       3000                    20              
+      7876 ADAMS      CLERK           7788 12/01/1983       1100                    20              
+      7934 MILLER     CLERK           7782 23/01/1982       1300                    10              
+      1000 AMIT       MANAGER         7839 30/04/2010      20000        500         10              
+      1002 ANIL                            30/08/2019      23000                    20              
+      1001 SACHIN                          30/04/2010      20000        500         10              
+      1003 CHETAN     CLERK           7839 30/04/1975      30000       3000         20              
+      1004 LALIT      CLERK           7839 30/04/1980      20000       3000         30              
+      1005 MANOJ      CLERK           7839 30/06/2018      40000       3000         30              
+
+20 rows selected.
+
+SQL> update my_emp set sal = sal + 10000, comm = 2000
+  2  where empno in (1000, 1002, 1003);
+
+3 rows updated.
+
+SQL> select * from my_emp;
+
+     EMPNO ENAME      JOB              MGR HIREDATE          SAL       COMM     DEPTNO              
+---------- ---------- --------- ---------- ---------- ---------- ---------- ----------              
+      7839 KING       PRESIDENT            17/11/1981       5000                    10              
+      7698 BLAKE      MANAGER         7839 01/05/1981       2850                    30              
+      7782 CLARK      MANAGER         7839 09/06/1981       2450                    10              
+      7566 JONES      MANAGER         7839 02/04/1981       2975                    20              
+      7654 MARTIN     SALESMAN        7698 28/09/1981       1250       1400         30              
+      7499 ALLEN      SALESMAN        7698 20/02/1981       1600        300         30              
+      7844 TURNER     SALESMAN        7698 08/09/1981       1500          0         30              
+      7900 JAMES      CLERK           7698 03/12/1981        950                    30              
+      7521 WARD       SALESMAN        7698 22/02/1981       1250        500         30              
+      7902 FORD       ANALYST         7566 03/12/1981       3000                    20              
+      7369 SMITH      CLERK           7902 17/12/1980        800                    20              
+      7788 SCOTT      ANALYST         7566 09/12/1982       3000                    20              
+      7876 ADAMS      CLERK           7788 12/01/1983       1100                    20              
+      7934 MILLER     CLERK           7782 23/01/1982       1300                    10              
+      1000 AMIT       MANAGER         7839 30/04/2010      30000       2000         10              
+      1002 ANIL                            30/08/2019      33000       2000         20              
+      1001 SACHIN                          30/04/2010      20000        500         10              
+      1003 CHETAN     CLERK           7839 30/04/1975      40000       2000         20              
+      1004 LALIT      CLERK           7839 30/04/1980      20000       3000         30              
+      1005 MANOJ      CLERK           7839 30/06/2018      40000       3000         30              
+
+20 rows selected.
+
+SQL> commit;
+
+Commit complete.
+
+SQL> cl scr
+
+SQL> select * from my_emp;
+
+     EMPNO ENAME      JOB              MGR HIREDATE          SAL       COMM     DEPTNO              
+---------- ---------- --------- ---------- ---------- ---------- ---------- ----------              
+      7839 KING       PRESIDENT            17/11/1981       5000                    10              
+      7698 BLAKE      MANAGER         7839 01/05/1981       2850                    30              
+      7782 CLARK      MANAGER         7839 09/06/1981       2450                    10              
+      7566 JONES      MANAGER         7839 02/04/1981       2975                    20              
+      7654 MARTIN     SALESMAN        7698 28/09/1981       1250       1400         30              
+      7499 ALLEN      SALESMAN        7698 20/02/1981       1600        300         30              
+      7844 TURNER     SALESMAN        7698 08/09/1981       1500          0         30              
+      7900 JAMES      CLERK           7698 03/12/1981        950                    30              
+      7521 WARD       SALESMAN        7698 22/02/1981       1250        500         30              
+      7902 FORD       ANALYST         7566 03/12/1981       3000                    20              
+      7369 SMITH      CLERK           7902 17/12/1980        800                    20              
+      7788 SCOTT      ANALYST         7566 09/12/1982       3000                    20              
+      7876 ADAMS      CLERK           7788 12/01/1983       1100                    20              
+      7934 MILLER     CLERK           7782 23/01/1982       1300                    10              
+      1000 AMIT       MANAGER         7839 30/04/2010      30000       2000         10              
+      1002 ANIL                            30/08/2019      33000       2000         20              
+      1001 SACHIN                          30/04/2010      20000        500         10              
+      1003 CHETAN     CLERK           7839 30/04/1975      40000       2000         20              
+      1004 LALIT      CLERK           7839 30/04/1980      20000       3000         30              
+      1005 MANOJ      CLERK           7839 30/06/2018      40000       3000         30              
+
+20 rows selected.
+
+SQL> delete my_emp;
+
+20 rows deleted.
+
+SQL> select * from my_emp;
+
+no rows selected
+
+SQL> rollback;
+
+Rollback complete.
+
+SQL> select * from my_emp;
+
+     EMPNO ENAME      JOB              MGR HIREDATE          SAL       COMM     DEPTNO              
+---------- ---------- --------- ---------- ---------- ---------- ---------- ----------              
+      7839 KING       PRESIDENT            17/11/1981       5000                    10              
+      7698 BLAKE      MANAGER         7839 01/05/1981       2850                    30              
+      7782 CLARK      MANAGER         7839 09/06/1981       2450                    10              
+      7566 JONES      MANAGER         7839 02/04/1981       2975                    20              
+      7654 MARTIN     SALESMAN        7698 28/09/1981       1250       1400         30              
+      7499 ALLEN      SALESMAN        7698 20/02/1981       1600        300         30              
+      7844 TURNER     SALESMAN        7698 08/09/1981       1500          0         30              
+      7900 JAMES      CLERK           7698 03/12/1981        950                    30              
+      7521 WARD       SALESMAN        7698 22/02/1981       1250        500         30              
+      7902 FORD       ANALYST         7566 03/12/1981       3000                    20              
+      7369 SMITH      CLERK           7902 17/12/1980        800                    20              
+      7788 SCOTT      ANALYST         7566 09/12/1982       3000                    20              
+      7876 ADAMS      CLERK           7788 12/01/1983       1100                    20              
+      7934 MILLER     CLERK           7782 23/01/1982       1300                    10              
+      1000 AMIT       MANAGER         7839 30/04/2010      30000       2000         10              
+      1002 ANIL                            30/08/2019      33000       2000         20              
+      1001 SACHIN                          30/04/2010      20000        500         10              
+      1003 CHETAN     CLERK           7839 30/04/1975      40000       2000         20              
+      1004 LALIT      CLERK           7839 30/04/1980      20000       3000         30              
+      1005 MANOJ      CLERK           7839 30/06/2018      40000       3000         30              
+
+20 rows selected.
+
+SQL> delete from my_emp where empno in (1000, 1001, 1002, 1003, 1004, 1005);
+
+6 rows deleted.
+
+SQL> select * from my_emp;
+
+     EMPNO ENAME      JOB              MGR HIREDATE          SAL       COMM     DEPTNO              
+---------- ---------- --------- ---------- ---------- ---------- ---------- ----------              
+      7839 KING       PRESIDENT            17/11/1981       5000                    10              
+      7698 BLAKE      MANAGER         7839 01/05/1981       2850                    30              
+      7782 CLARK      MANAGER         7839 09/06/1981       2450                    10              
+      7566 JONES      MANAGER         7839 02/04/1981       2975                    20              
+      7654 MARTIN     SALESMAN        7698 28/09/1981       1250       1400         30              
+      7499 ALLEN      SALESMAN        7698 20/02/1981       1600        300         30              
+      7844 TURNER     SALESMAN        7698 08/09/1981       1500          0         30              
+      7900 JAMES      CLERK           7698 03/12/1981        950                    30              
+      7521 WARD       SALESMAN        7698 22/02/1981       1250        500         30              
+      7902 FORD       ANALYST         7566 03/12/1981       3000                    20              
+      7369 SMITH      CLERK           7902 17/12/1980        800                    20              
+      7788 SCOTT      ANALYST         7566 09/12/1982       3000                    20              
+      7876 ADAMS      CLERK           7788 12/01/1983       1100                    20              
+      7934 MILLER     CLERK           7782 23/01/1982       1300                    10              
+
+14 rows selected.
+
+SQL> commit;
+
+Commit complete.
+
+SQL> spool off

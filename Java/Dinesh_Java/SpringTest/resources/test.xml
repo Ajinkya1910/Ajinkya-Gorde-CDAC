@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx" 
+ xmlns:p="http://www.springframework.org/schema/p" xmlns:c="http://www.springframework.org/schema/c" 
+ xmlns:context="http://www.springframework.org/schema/context" 
+ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd 
+ http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context-4.0.xsd"
+ 
+ >
+
+<!-- default-lazy-init="true" -->
+
+	<bean id="employee1" class="com.met.spring.Employee"></bean>
+	
+	<bean id="employee2" class="com.met.spring.Employee"></bean>
+	
+	<bean id="employee3" class="com.met.spring.Employee" scope="prototype"></bean>	
+	
+	<bean id="employee4" class="com.met.spring.Employee" >
+		<constructor-arg value="22"></constructor-arg>
+		<constructor-arg value="suresh@met.edu"></constructor-arg>
+	</bean>
+	
+	<bean id="employee5" class="com.met.spring.Employee" 
+					lazy-init="true"></bean>
+					
+					
+	<bean id="employee6" class="com.met.spring.Employee" >
+		<constructor-arg type="String" value="suresh@met.edu"></constructor-arg>
+		<constructor-arg type="int" value="22"></constructor-arg>
+	</bean>
+	
+	<bean id="employee7" class="com.met.spring.Employee" >
+		<constructor-arg index="1" value="suresh@met.edu"></constructor-arg>
+		<constructor-arg index="0" value="22"></constructor-arg>
+	</bean>
+	
+	<bean id="employee8" class="com.met.spring.Employee" >
+		<property name="age" value="25"></property>
+		<property name="emailId" value="Ramesh@met.edu"></property>
+		<property name="designation" value="SSE"></property>
+	</bean>
+	
+	<bean id="address1" class="com.met.spring.Address">
+		<property name="city" value="Mumbai"></property>
+		<property name="country" value="India"></property>
+	</bean>
+	
+	
+	<bean id="employee9" class="com.met.spring.Employee" >
+		<constructor-arg  value="30"></constructor-arg>
+		<constructor-arg value="Ram@met.edu"></constructor-arg>
+		<constructor-arg value="VP"> </constructor-arg>
+		<constructor-arg ref="address1"></constructor-arg>
+	</bean>
+	
+	<bean id="stage1" class="com.met.spring.Stage" factory-method="getStage"></bean>
+	
+	<bean id="stage2" class="com.met.spring.Stage" factory-method="getStage"></bean>
+	
+</beans>
+
+
+
+
+
+

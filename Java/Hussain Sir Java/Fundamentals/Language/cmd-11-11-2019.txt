@@ -1,0 +1,164 @@
+    1  cd /SoftDev/
+    2  mkdir Java
+    3  cd Java/
+    4  mkdir Fundamentals
+    5  cd Fundamentals/
+    6  mkdir Language
+    7  cd Language/
+    8  vi Hello.java
+    9  javac Hello.java 
+   10  ll
+   11* 
+   12  cp Greeter.class ~/Shared/Test/
+   13  sftp pi@guest.met.edu
+   14  ssh pi@guest.met.edu
+   15  vi Hello.java
+   16  javac Hello.java 
+   17  java Greeter
+   18  javac Hello.java 
+   19  vi Hello.java
+   20  javac Hello.java 
+   21  java Greeter
+   22  history > cmd-11-11-2019.txt
+    1  cd /SoftDev/
+    2  mkdir Java
+    3  cd Java/
+    4  mkdir Fundamentals
+    5  cd Fundamentals/
+    6  mkdir Language
+    7  cd Language/
+    8  vi Hello.java
+    9  javac Hello.java 
+   10  ll
+   11* 
+   12  cp Greeter.class ~/Shared/Test/
+   13  sftp pi@guest.met.edu
+   14  ssh pi@guest.met.edu
+   15  vi Hello.java
+   16  javac Hello.java 
+   17  java Greeter
+   18  javac Hello.java 
+   19  vi Hello.java
+   20  javac Hello.java 
+   21  java Greeter
+   22  history > cmd-11-11-2019.txt
+   23  mkdir Basics
+   24  cd Basics/
+   25  vi MethodTest.java
+   26  ll
+   27  vi MethodTest1.java
+   28  javac MethodTest1.java 
+   29  java MethodTest1 75000 4
+   30  vi MethodTest1.java
+   31  javac MethodTest1.java 
+   32  java MethodTest1 75000 4
+   33  vi MethodTest2.java
+   34  javac MethodTest2.java
+   35  java MethodTest2
+   36  vi MethodTest2.java
+   37  javac MethodTest2.java
+   38  vi MethodTest2.java
+   39  javac MethodTest2.java
+   40  java MethodTest2
+   41  vi MethodTest2.java
+   42  javac MethodTest2.java
+   43  vi MethodTest2.java
+   44  javac MethodTest2.java
+   45  java MethodTest2
+   46  vi TryCatchTest.java
+   47  javac TryCatchTest.java
+   48  java TryCatchTest 12.3
+   49  java TryCatchTest
+   50  vi TryCatchTest.java
+   51  javac TryCatchTest.java
+   52  java TryCatchTest 12.3
+   53  java TryCatchTest
+   54  cp TryCatchTest.java TryFinallyTest.java
+   55  vi TryFinallyTest.java 
+   56  vi TryCatchTest.java
+   57  java TryCatchTest abcd
+   58  vi TryCatchTest.java
+   59  javac TryCatchTest.java
+   60  java TryCatchTest 1.5
+   61  java TryCatchTest
+   62  java TryCatchTest abcd
+   63  vi TryFinallyTest.java 
+   64  javac TryFinallyTest.java 
+   65  java TryFinallyTest 1.2
+   66  vi TryFinallyTest.java 
+   67  javac TryFinallyTest.java 
+   68  java TryFinallyTest 1.2
+   69  java TryFinallyTest
+   70  java TryFinallyTest 1.l
+   71  vi TryFinallyTest.java 
+   72  javac TryFinallyTest.java 
+   73  java TryFinallyTest 1.1
+   74  java TryFinallyTest
+   75  java TryFinallyTest l.l
+   76  vi SwitchStringTest.java
+   77  javac SwitchStringTest.java 
+   78  java SwitchStringTest 75000 4
+   79  vi SwitchStringTest.java
+   80  javac SwitchStringTest.java 
+   81  java SwitchStringTest 75000 4
+   82  vi SwitchStringTest.java
+   83  javac SwitchStringTest.java 
+   84  java SwitchStringTest 75000 4
+   85  cp SwitchStringTest.java SwitchEnumTest.java
+   86  vi SwitchEnumTest.java
+   87  javac SwitchEnumTest.java 
+   88  vi SwitchEnumTest.java
+   89  javac SwitchEnumTest.java 
+   90  java SwitchEnumTest 75000 4
+   91  vi Interval.java
+   92  javac Interval.java 
+   93  vi ClassTest.java
+   94  vi Interval.java
+   95  javac Interval.java 
+   96  vi ClassTest.java
+   97  javac ClassTest.java
+   98  java ClassTest
+   99  vi Interval.java
+  100  javac Interval.java 
+  101  java ClassTest
+  102  vi Interval.java
+  103  vi ClassTest.java
+  104  javac ClassTest.java
+  105  java ClassTest
+  106  vi ClassTest.java
+  107  javac ClassTest.java
+  108  java ClassTest
+  109  cd ..
+  110  mkdir Inheritance
+  111  cd Inheritance/
+  112  mkdir payroll
+  113  vi payroll/Employee.java
+  114  javac payroll/Employee.java
+  115  vi payroll/Employee.java
+  116  javac payroll/Employee.java
+  117  ll payroll/
+  118  javac payroll/SalesPerson.java
+  119  vi payroll/SalesPerson.java
+  120  javac payroll/SalesPerson.java
+  121  vi SubclassTest1.java
+  122  javac SubclassTest1.java
+  123  vi SubclassTest1.java
+  124  javac SubclassTest1.java
+  125  vi payroll/Employee.java 
+  126  javac SubclassTest1.java
+  127  java SubclassTest1
+  128  vi payroll/Employee.java 
+  129  vi SubclassTest1.java
+  130  rm SubclassTest.class 
+  131  javac SubclassTest1.java
+  132  java SubclassTest1
+  133  vi SubclassTest1.java
+  134  javac SubclassTest1.java
+  135  java SubclassTest1
+  136  vi SubclassTest1.java
+  137  javac SubclassTest1.java
+  138  vi SubclassTest1.java
+  139  javac SubclassTest1.java
+  140  java SubclassTest1
+  141  vi SubclassTest1.java
+  142  history >> ../cmd-11-11-2019.txt 

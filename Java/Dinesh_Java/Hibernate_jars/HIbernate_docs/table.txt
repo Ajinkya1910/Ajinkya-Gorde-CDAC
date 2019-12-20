@@ -1,0 +1,25 @@
+
+
+
+
+
+
+create table account(
+	id int,
+	name varchar(50),
+	balance bigint,
+	primary key(id)	
+);
+
+
+persistence xml is only for JPA
+
+
+/*
+	 * If you take a look at Hibernate flush order, you’ll see that the persist action is executed 
+	 * before the collection elements are handled. This way,
+	 *  Hibernate inserts the child records first without the Foreign Key since the child entity
+	 *   does not store this information. 
+	 *  During collection handling phase, the Foreign Key column is updated accordingly.
+	 * */
+	/*

@@ -1,0 +1,70 @@
+    1  ~/glassfish5/bin/asadmin start-domain
+    2  . ~/glassfish5/setenv.sh 
+    3  cd /SoftDev/Java/Applications/Web/
+    4  ll
+    5  mkdir JSPTest
+    6  cd JSPTest/
+    7  mkdir -p WEB-INF/classes
+    8  cp ../ServletTest/WEB-INF/web.xml WEB-INF/
+    9  vi WEB-INF/web.xml 
+   10  ~/glassfish5/bin/asadmin deploy .
+   11  cp ../ServletTest/welcome.html welcome.jsp
+   12  vi welcome.jsp 
+   13  cd WEB-INF/classes/
+   14  mkdir src
+   15  vi src/CounterBean.java
+   16  javac -d . src/CounterBean.java 
+   17  touch ../../.reload
+   18  cp ../../welcome.jsp ../../beantest1.jsp
+   19  vi ../../beantest1.jsp 
+   20  vi src/GreeterFormBean.java
+   21  javac -d . src/GreeterFormBean.java
+   22  vi ../../beantest2.jspx
+   23  touch ../../.reload 
+   24  vi src/ClockTag.java
+   25  javac . src/ClockTag.java
+   26  javac d . src/ClockTag.java
+   27  javac -d . src/ClockTag.java
+   28  vi src/ClockTag.java
+   29  javac -d . src/ClockTag.java
+   30  vi ../taglib.tld 
+   31  touch ../../.reload 
+   32  cp ../../welcome.jsp ../../tagtest1.jsp
+   33  vi ../../tagtest1.jsp 
+   34  vi ../taglib.tld 
+   35  vi ../../tagtest1.jsp 
+   36  history > cmd-21-11-2019.txt
+   37  vi src/LottoTag.java
+   38  javac -d . src/LottoTag.java
+   39  vi ../taglib.tld 
+   40  cp ../../beantest2.jspx ../../tagtest2.jspx
+   41  vi ../../tagtest2.jspx
+   42  touch ../../.reload 
+   43  vi ../../tagtest2.jspx
+   44  vi src/LottoTag.java
+   45  vi ../../tagtest2.jspx
+   46  cd ../..
+   47  cd ..
+   48  mkdir JSFTest
+   49  cd JSFTest/
+   50  mkdir -p WEB-INF/classes
+   51  cp ../ServletTest/WEB-INF/web.xml  WEB-INF/
+   52  vi WEB-INF/web.xml 
+   53  vi index.xhtml
+   54  ~/glassfish5/bin/asadmin deploy .
+   55  cd WEB-INF/classes/
+   56  mkdir src
+   57  cp /SoftDev/Java/Applications/Desktop/SwingMVCTest/src/tour.app/Document.java src/
+   58  cp /SoftDev/Java/Applications/Desktop/SwingMVCTest/src/tour.app/Visitor.java src/
+   59  vi src/Visitor.java 
+   60  vi src/Document.java 
+   61  vi src/VisitorManagedBean.java
+   62  javac -d . src/VisitorManagedBean.java
+   63  vi src/Visitor.java 
+   64  vi src/VisitorManagedBean.java
+   65  javac -d . src/*.java
+   66  touch ../../.reload
+   67  vi ../../index.xhtml 
+   68  vi ../../register.xhtml
+   69  cd ../..
+   70  history > cmd-21-11-2019.txt

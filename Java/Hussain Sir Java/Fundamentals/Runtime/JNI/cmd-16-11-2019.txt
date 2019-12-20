@@ -1,0 +1,25 @@
+    1  cd /SoftDev/Java/Fundamentals/Runtime/
+    2  mkdir JNI
+    3  cd JNI
+    4  vi NativeMethodTest.java
+    5  javac NativeMethodTest.java
+    6  java NativeMethodTest 70 98
+    7  vi nmt.c
+    8  export CPATH=/usr/java/jdk-12.0.1/include/:/usr/java/jdk-12.0.1/include/linux/
+    9  cc -shared -fPIC -o libnmt.so nmt.c 
+   10  ll
+   11  java NativeMethodTest 70 98
+   12  vi NativeMethodTest.java
+   13  javac NativeMethodTest.java
+   14  java NativeMethodTest 70 98
+   15  java -Djava.library.path=. NativeMethodTest 70 98
+   16  export LD_LIBRARY_PATH=.
+   17  java NativeMethodTest 70 98
+   18  vi StringAccessTest.java
+   19  javac -h . StringAccessTest.java 
+   20  ll
+   21  vi StringHelper.h 
+   22  vi strh.cpp
+   23  c++ -shared -fPIC -o libstrh.so strh.cpp 
+   24  java StringAccessTest monday
+   25  history > cmd-16-11-2019.txt

@@ -1,0 +1,36 @@
+  <bean id="sessionFactoryBean" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+    	<property name="dataSource" ref="dataSource"></property>
+    	<property name="annotatedClasses">
+
+
+
+
+
+ create table EmployeeCount (count number);
+insert into EmployeeCount  (select count(1) from EmployeeTbl);
+
+
+
+<bean id="contentNegotiationManager" class="org.springframework.web.accept.ContentNegotiationManagerFactoryBean"> 
+		<property name="favorPathExtension" value="false"/>
+		
+		<property name="favorParameter" value="true"/>
+		
+		<property name="parameterName" value="formatType"/>
+		 <property name="useJaf" value="false"/>
+		
+		<property name="mediaTypes">
+			<map>
+				<entry key="json" value="application/json"></entry>
+				<entry key="xml" value="application/xml"></entry>				
+			</map>
+		</property>
+		
+		<property name="ignoreAcceptHeader" value="false"/>
+		
+	</bean>
+
+
+<listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+</listener>

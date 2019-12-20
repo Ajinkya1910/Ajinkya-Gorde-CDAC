@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+    version="2.0">
+<description>Custom Tag</description>
+<tlib-version>2.1</tlib-version>
+<short-name>mytags</short-name>
+<uri>https://sales.met.web</uri>
+<!--
+<tag>
+	<name></name>
+	<tag-class></tag-class>
+	<body-content></body-content>
+	<attribute>
+	<name></name>
+	<required></required>
+	</attribute>		
+</tag>
+-->
+
+<tag>
+	<name>getProducts</name>
+	<tag-class>com.met.customtag.ProductInfoTag</tag-class>
+	<body-content>scriptless</body-content>
+</tag>
+
+
+</taglib>

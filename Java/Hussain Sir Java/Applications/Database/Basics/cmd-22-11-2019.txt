@@ -1,0 +1,42 @@
+    1  cd /SoftDev/Java/Applications/
+    2  mkdir Database
+    3  cd Database/
+    4  mkdir Basics
+    5  cd Basics/
+    6  vi DBQueryTest.java
+    7  javac DBQueryTest.java
+    8  vi mysql.properties
+    9  java DBQueryTest mysql.properties 
+   10  cp mysql.properties oracle.properties
+   11  vi oracle.properties 
+   12  java DBQueryTest oracle.properties 
+   13  ~/orclxe start
+   14  java DBQueryTest oracle.properties 
+   15  vi DBQueryTest.java
+   16  ll ~/jars/
+   17  echo $CLASSPATH
+   18  vi ~/.bashrc 
+   19  vi DBQueryTest.java
+   20  vi UpdateTest.java
+   21  javac UpdateTest.java 
+   22  java UpdateTest 103
+   23  java UpdateTest 108
+   24  vi UpdateTest.java
+   25  javac UpdateTest.java
+   26  java UpdateTest 102
+   27  java UpdateTest "102;drop table product"
+   28  cp UpdateTest.java ParamSQLTest.java
+   29  vi ParamSQLTest.java 
+   30  javac ParamSQLTest.java 
+   31  vi ParamSQLTest.java 
+   32  javac ParamSQLTest.java 
+   33  java ParamSQLTest CU102 104 5
+   34  java ParamSQLTest CU103 108 3
+   35  java ParamSQLTest CU103 102 3
+   36  cp ParamSQLTest.java StoredProcTest.java
+   37  vi StoredProcTest.java 
+   38  javac StoredProcTest.java 
+   39  java StoredProcTest CU101 103 6
+   40  java StoredProcTest CU107 102 8
+   41  java StoredProcTest CU104 102 8
+   42  history > cmd-22-11-2019.txt

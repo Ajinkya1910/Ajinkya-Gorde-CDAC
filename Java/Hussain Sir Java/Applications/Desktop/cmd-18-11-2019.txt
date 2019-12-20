@@ -1,0 +1,113 @@
+    1  cd /SoftDev/Java/
+    2  mkdir -p Applications/Desktop/
+    3  cd Applications/Desktop/
+    4  ll
+    5  vi AWTPlainTest.java
+    6  javac AWTPlainTest.java
+    7  java AWTPlainTest
+    8  vi AWTPlainTest.java
+    9  javac AWTPlainTest.java
+   10  vi AWTPlainTest.java
+   11  javac AWTPlainTest.java
+   12  java AWTPlainTest
+   13  cp AWTPlainTest.java AWTPaintTest.java
+   14  vi AWTPaintTest.java 
+   15  javac AWTPaintTest.java 
+   16  java AWTPaintTest
+   17  vi AWTPaintTest.java 
+   18  javac AWTPaintTest.java 
+   19  java AWTPaintTest
+   20  vi AWTPaintTest.java 
+   21  javac AWTPaintTest.java 
+   22  java AWTPaintTest
+   23  vi AWTPaintTest.java 
+   24  javac AWTPaintTest.java 
+   25  java AWTPaintTest
+   26  vi AWTPaintTest.java 
+   27  javac AWTPaintTest.java 
+   28  java AWTPaintTest
+   29  vi AWTPaintTest.java 
+   30  javac AWTPaintTest.java 
+   31  java AWTPaintTest
+   32  vi AWTPaintTest.java 
+   33  javac AWTPaintTest.java 
+   34  java AWTPaintTest
+   35  cp AWTPlainTest.java AWTChildTest.java
+   36  vi AWTChildTest.java
+   37  javac AWTChildTest.java
+   38  java AWTChildTest
+   39  vi AWTChildTest.java
+   40  javac AWTChildTest.java
+   41  java AWTChildTest
+   42  vi AWTChildTest.java
+   43  javac AWTChildTest.java
+   44  vi AWTChildTest.java
+   45  javac AWTChildTest.java
+   46  java AWTChildTest
+   47  javap java.awt.ActionListener
+   48  javap java.awt.event.ActionListener
+   49  vi AWTChildTest.java
+   50  javac AWTChildTest.java
+   51  java AWTChildTest
+   52  vi AWTChildTest.java
+   53  javac AWTChildTest.java
+   54  java AWTChildTest
+   55  vi AWTChildTest.java
+   56  javac AWTChildTest.java
+   57  java AWTChildTest
+   58  history > cmd-18-11-2019.txt
+    1  cd /SoftDev/Java/Applications/Desktop/
+    2  java AWTChildTest
+    3  vi SwingPlainTest.java
+    4  javac SwingPlainTest.java
+    5  java SwingPlainTest
+    6  vi SwingPlainTest.java
+    7  javac SwingPlainTest.java
+    8  java SwingPlainTest
+    9  cp SwingPlainTest.java SwingPaintTest.java
+   10  vi SwingPaintTest.java 
+   11  javac SwingPlainTest.java
+   12  java SwingPlainTest
+   13  vi SwingPaintTest.java 
+   14  javac SwingPaintTest.java 
+   15  vi SwingPaintTest.java 
+   16  javac SwingPaintTest.java 
+   17  java SwingPaintTest
+   18  vi SwingPaintTest.java 
+   19  javac SwingPaintTest.java 
+   20  java SwingPaintTest
+   21  vi SwingPaintTest.java 
+   22  javac SwingPaintTest.java 
+   23  java SwingPaintTest
+   24  cp SwingPlainTest.java SwingChildTest.java
+   25  vi SwingChildTest.java 
+   26  javac SwingChildTest.java 
+   27  java SwingChildTest
+   28  mkdir SwingMVCTest
+   29  cd SwingMVCTest/
+   30  mkdir src
+   31  mkdir src/tour.app
+   32  vi src/tour.app/module-info.java
+   33  vi src/tour.app/Document.java 
+   34  javac -d . --module-source-path src --module tour.app
+   35  ll
+   36  vi src/tour.app/Vistor.java
+   37  javac -d . --module-source-path src --module tour.app
+   38  mv src/tour.app/Vistor.java src/tour.app/Visitor.java
+   39  javac -d . --module-source-path src --module tour.app
+   40  vi src/tour.app/VisitorView.java
+   41  javac -d . --module-source-path src --module tour.app
+   42  vi src/tour.app/VisitorModel.java
+   43  javap javax.swing.table.TableModel
+   44  javap javax.swing.table.AbstractTableModel
+   45  vi src/tour.app/VisitorModel.java
+   46  javac -d . --module-source-path src --module tour.app
+   47  vi src/tour.app/VisitorModel.java
+   48  javac -d . --module-source-path src --module tour.app
+   49  vi src/tour.app/VisitorController.java
+   50  javac -d . --module-source-path src --module tour.app
+   51  jar -c -f mvcapp.jar --main-class edu.met.tourism.VisitorController -C tour.app .
+   52  java -jar mvcapp.jar 
+   53  cd ..
+   54  ll
+   55  history >> cmd-18-11-2019.txt 

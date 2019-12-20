@@ -1,0 +1,33 @@
+    1  cd /SoftDev/Java/Applications/
+    2  mkdir Distributed
+    3  cd Distributed/
+    4  vi ServerSocketTest.java
+    5  javac ServerSocketTest.java
+    6  java ServerSocketTest &
+    7  netstat -noa |more
+    8  telnet localhost 4001
+    9  java ServerSocketTest
+   10  ps
+   11  telnet localhost khussain.met.edu
+   12  telnet khussain.met.edu 4001
+   13  telnet localhost 4001
+   14  ps
+   15  kill 14280
+   16  vi ServerSocketTest.java 
+   17  javac ServerSocketTest.java 
+   18  java ServerSocketTest &
+   19  telnet localhost 4001
+   20  ps
+   21  kill 14683
+   22  vi ServerSocketTest.java 
+   23  javac ServerSocketTest.java 
+   24  java ServerSocketTest &
+   25  telnet localhost 4001
+   26  vi SocketTest.java
+   27  javac SocketTest.java
+   28  java SocketTest memory
+   29  java SocketTest cpu khussain.met.edu
+   30  java SocketTest mango
+   31  ps
+   32  kill 14943
+   33  history > cmd-19-11-2019.txt

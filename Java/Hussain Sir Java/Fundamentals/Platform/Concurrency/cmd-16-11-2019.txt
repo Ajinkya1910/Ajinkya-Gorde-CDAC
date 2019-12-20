@@ -1,0 +1,112 @@
+    1  cd /SoftDev/Java/Fundamentals/Runtime/
+    2  mkdir JNI
+    3  cd JNI
+    4  vi NativeMethodTest.java
+    5  javac NativeMethodTest.java
+    6  java NativeMethodTest 70 98
+    7  vi nmt.c
+    8  export CPATH=/usr/java/jdk-12.0.1/include/:/usr/java/jdk-12.0.1/include/linux/
+    9  cc -shared -fPIC -o libnmt.so nmt.c 
+   10  ll
+   11  java NativeMethodTest 70 98
+   12  vi NativeMethodTest.java
+   13  javac NativeMethodTest.java
+   14  java NativeMethodTest 70 98
+   15  java -Djava.library.path=. NativeMethodTest 70 98
+   16  export LD_LIBRARY_PATH=.
+   17  java NativeMethodTest 70 98
+   18  vi StringAccessTest.java
+   19  javac -h . StringAccessTest.java 
+   20  ll
+   21  vi StringHelper.h 
+   22  vi strh.cpp
+   23  c++ -shared -fPIC -o libstrh.so strh.cpp 
+   24  java StringAccessTest monday
+   25  history > cmd-16-11-2019.txt
+   26  vi ArrayAccessTest.java
+   27  javac -h . ArrayAccessTest.java 
+   28  vi ArrayHelper.h 
+   29  vi arrh.cpp
+   30  c++ -shared -fPIC -o libstrh.so strh.cpp 
+   31  java ArrayAccessTest 1.2 2.3 3.4 4.5
+   32  echo $LD_LIBRARY_PATH
+   33  vi ArrayAccessTest.java
+   34  c++ -shared -fPIC -o libarrh.so strh.cpp 
+   35  java ArrayAccessTest 1.2 2.3 3.4 4.5
+   36  c++ -shared -fPIC -o libarrh.so arrh.cpp 
+   37  java ArrayAccessTest 1.2 2.3 3.4 4.5
+   38  vi ArrayAccessTest.java
+   39  javac -h . ArrayAccessTest.java 
+   40  java ArrayAccessTest 1.2 2.3 3.4 4.5
+   41  java ArrayAccessTest 1 2 3 4 5
+   42  vi taxation.h 
+   43  vi ObjectAccessTest.java
+   44  javac -h . ObjectAccessTest.java
+   45  javap -p -s LegacyTaxPayer
+   46  vi LegacyTaxPayer.h 
+   47  vi ltaxp.cpp
+   48  c++ -shared -fPIC -o libltaxp.so ltaxp.cpp taxation.o
+   49  vi ltaxp.cpp
+   50  c++ -shared -fPIC -o libltaxp.so ltaxp.cpp taxation.o
+   51  java ObjectAccessTest 400000 24
+   52  java ObjectAccessTest 4000000 42
+   53  java ObjectAccessTest 4000000 62
+   54  java ObjectAccessTest 4000000 82
+   55  vi ltaxp.cpp
+   56  c++ -shared -fPIC -o libltaxp.so ltaxp.cpp taxation.o
+   57  java ObjectAccessTest 4000000 82
+   58  java ObjectAccessTest 4000000 12
+   59  cd ..
+   60  mkdir Platform
+   61  cd Platform/
+   62  mkdir Concurrency
+   63  cd Concurrency/
+   64  vi Worker.java 
+   65  javac Worker.java 
+   66  vi ThreadTest.java
+   67  javac ThreadTest.java
+   68  java ThreadTest
+   69  vi ThreadTest.java
+   70  javac ThreadTest.java
+   71  java ThreadTest
+   72  java ThreadTest 70
+   73  vi ThreadTest.java
+   74  javac ThreadTest.java
+   75  java ThreadTest
+   76  java ThreadTest 70
+   77  java ThreadTest 90
+   78  javac ThreadTest.java
+   79  vi ThreadTest.java
+   80  javac ThreadTest.java
+   81  java ThreadTest 70
+   82  vi ThreadSyncTest.java 
+   83  javac ThreadSyncTest.java 
+   84  java ThreadSyncTest
+   85  vi ThreadSyncTest.java 
+   86  javac ThreadSyncTest.java 
+   87  java ThreadSyncTest
+   88  vi ThreadSyncTest.java 
+   89  javac ThreadSyncTest.java 
+   90  java ThreadSyncTest
+   91  vi ThreadSyncTest.java 
+   92  javac ThreadSyncTest.java 
+   93  java ThreadSyncTest
+   94  vi ThreadSyncTest.java 
+   95  javac ThreadSyncTest.java 
+   96  java ThreadSyncTest
+   97  vi ThreadCoordTest.java 
+   98  javac ThreadCoordTest.java 
+   99  java ThreadCoordTest
+  100  vi ThreadCoordTest.java 
+  101  javac ThreadCoordTest.java 
+  102  java ThreadCoordTest
+  103  vi ThreadCoordTest.java 
+  104  javac ThreadCoordTest.java 
+  105  java ThreadCoordTest
+  106  vi ThreadCoordTest.java 
+  107  javac ThreadCoordTest.java 
+  108  vi ThreadCoordTest.java 
+  109  javac ThreadCoordTest.java 
+  110  java ThreadCoordTest
+  111  vi ThreadCoordTest.java 
+  112  history > cmd-16-11-2019.txt

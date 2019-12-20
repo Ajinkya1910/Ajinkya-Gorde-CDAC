@@ -1,0 +1,49 @@
+    1  cd /SoftDev/Java/Applications/Distributed/
+    2  cd RMITest/
+    3  rmiregistry &
+    4  java Server &
+    5  cd ../..
+    6  cd Web/
+    7  mkdir RESTTest
+    8  cd RESTTest/
+    9  mkdir -p WEB-INF/classes/src
+   10  cp ../ServletTest/WEB-INF/web.xml WEB-INF/
+   11  vi WEB-INF/web.xml 
+   12  ~/glassfish5/bin/asadmin start-domain
+   13  ~/glassfish5/bin/asadmin deploy .
+   14  . ~/glassfish5/setenv.sh 
+   15  cd WEB-INF/classes/
+   16  vi /SoftDev/Java/Applications/Distributed/RMITest/shopping/ItemInfo.java src/
+   17  cp /SoftDev/Java/Applications/Distributed/RMITest/shopping/ItemInfo.java src/
+   18  cp /SoftDev/Java/Applications/Distributed/RMITest/shopping/ShopKeeper.java src/
+   19  javac -d . src/
+   20  javac -d . src/*.java
+   21  vi src/ShopService.java
+   22  javac -d . src/ShopService.java
+   23  vi src/ShopService.java
+   24  javac -d . src/ShopService.java
+   25  touch ../../.reload
+   26  vi src/ShopService.java
+   27  javac -d . src/ShopService.java
+   28  touch ../../.reload
+   29  vi src/ShopService.java
+   30  touch ../../.reload
+   31  javac -d . src/ShopService.java
+   32  touch ../../.reload
+   33  vi src/ShopService.java
+   34  vi src/OrderInput.java
+   35  vi src/OrderOutput.java
+   36  javac -d . src/OrderInput.java
+   37  javac -d . src/OrderOutput.java
+   38  vi src/ShopService.java
+   39  javac -d . src/ShopService.java
+   40  vi src/ShopService.java
+   41  javac -d . src/ShopService.java
+   42  touch ../../.reload 
+   43  vi ../../shop.html 
+   44  ~/glassfish5/bin/asadmin stop-domain
+   45  ps
+   46  kill 11333
+   47  kill 11300
+   48  cd ../..
+   49  history > cmd-22-11-2019.txt

@@ -1,0 +1,170 @@
+    1  cd /SoftDev/Java/Fundamentals/Language/Inheritance/
+    2  cp InnerClassTest.java LambdaTest.java
+    3  vi LambdaTest.java 
+    4  javac LambdaTest.java 
+    5  ll LambdaTest*.class
+    6  java LambdaTest
+    7  vi LambdaTest.java 
+    8  javac LambdaTest.java 
+    9  java LambdaTest
+   10  javap -p LambdaTest
+   11  cd ../..
+   12  mkdir Generics
+   13  cd Generics/
+   14  mkdir Basics
+   15  cd Basics/
+   16  ll
+   17  vi AutoBoxTest1.java
+   18  javac AutoBoxTest1.java
+   19  vi AutoBoxTest1.java
+   20  javac AutoBoxTest1.java
+   21  java AutoBoxTest1 jill
+   22  java AutoBoxTest1 jerry
+   23  vi AutoBoxTest2.java
+   24  javac AutoBoxTest2.java 
+   25  java AutoBoxTest2 -3
+   26  java AutoBoxTest2 5
+   27  vi AutoBoxTest2.java
+   28  javac AutoBoxTest2.java 
+   29  java AutoBoxTest2 -3
+   30  java AutoBoxTest2 5
+   31  vi AutoBoxTest2.java
+   32  cp AutoBoxTest2.java GenMethodTest.java
+   33  bi GenMethodTest.java 
+   34  vi GenMethodTest.java 
+   35  javac GenMethodTest.java 
+   36  vi GenMethodTest.java 
+   37  javac GenMethodTest.java 
+   38  vi GenMethodTest.java 
+   39  javac GenMethodTest.java 
+   40  java GenMethodTest -3
+   41  java GenMethodTest 5
+   42  cp GenMethodTest.java BoundedTypeTest.java
+   43  vi BoundedTypeTest.java 
+   44  javac BoundedTypeTest.java 
+   45  vi BoundedTypeTest.java 
+   46  javap java.lang.Comparable
+   47  javap java.lang.String
+   48  javap java.lang.Double
+   49  javac BoundedTypeTest.java 
+   50  java BoundedTypeTest
+   51  vi BoundedTypeTest.java 
+   52  javac BoundedTypeTest.java 
+   53  java BoundedTypeTest
+   54  cp ../../Language/Inheritance/Interval.java .
+   55  javac Interval.java 
+   56  vi BoundedTypeTest.java 
+   57  javac BoundedTypeTest.java 
+   58  vi Interval.java 
+   59  javac Interval.java 
+   60  javac BoundedTypeTest.java 
+   61  java BoundedTypeTest
+   62  vi GenClassTest.java
+   63  javac GenClassTest.java
+   64  vi GenClassTest.java
+   65  javac GenClassTest.java
+   66  vi GenClassTest.java
+   67  javac GenClassTest.java
+   68  java GenClassTest
+   69  vi GenClassTest.java
+   70  javac GenClassTest.java
+   71  java GenClassTest
+   72  cp GenClassTest.java WildcardTest.java
+   73  vi WildcardTest.java 
+   74  javac WildcardTest.java 
+   75  java WildcardTest
+   76  vi WildcardTest.java 
+   77  vi GenClassTest.java 
+   78  javac GenClassTest.java 
+   79  vi WildcardTest.java 
+   80  javac WildcardTest.java 
+   81  vi WildcardTest.java 
+   82  javac WildcardTest.java 
+   83  vi WildcardTest.java 
+   84  javac WildcardTest.java 
+   85  java WildcardTest
+   86  vi WildcardTest.java 
+   87  history > cmd-14-11-2019.txt
+   88  vi WildcardTest.java 
+   89  javac WildcardTest.java 
+   90  vi WildcardTest.java 
+   91  javac WildcardTest.java 
+   92  vi WildcardTest.java 
+   93  javac WildcardTest.java 
+   94  java WildcardTest
+   95  vi WildcardTest.java 
+   96  javac WildcardTest.java 
+   97  java WildcardTest
+   98  vi WildcardTest.java 
+   99  javac WildcardTest.java 
+  100  vi WildcardTest.java 
+  101  javac WildcardTest.java 
+  102  java WildcardTest
+  103  cp GenClassTest.java IterationTest.java
+  104  vi IterationTest.java 
+  105  javac IterationTest.java 
+  106  vi IterationTest.java 
+  107  javac IterationTest.java 
+  108  java GenClassTest.java 
+  109  javac GenClassTest.java 
+  110  javac IterationTest.java 
+  111  java IterationTest
+  112  vi IterationTest.java 
+  113  javac IterationTest.java 
+  114  java IterationTest
+  115  vi IterationTest.java 
+  116  javac IterationTest.java 
+  117  vi IterationTest.java 
+  118  javap java.util.Iterator
+  119  vi IterationTest.java 
+  120  javac IterationTest.java 
+  121  java IterationTest
+  122  vi IterationTest.java 
+  123  javac IterationTest.java 
+  124  java IterationTest
+  125  vi IterationTest.java 
+  126  cd ..
+  127  mkdir Collections
+  128  cd Collections/
+  129  cp ../Basics/Interval.java .
+  130  vi ArrayListTest.java
+  131  javac ArrayListTest.java
+  132  java ArrayListTest
+  133  cp ArrayListTest.java LinkedListTest.java
+  134  vi LinkedListTest.java 
+  135  javac LinkedListTest.java 
+  136  java LinkedListTest
+  137  cp ArrayListTest.java HashSetTest.java
+  138  vi HashSetTest.java 
+  139  javac HashSetTest.java 
+  140  vi HashSetTest.java 
+  141  javac HashSetTest.java 
+  142  vi HashSetTest.java 
+  143  java HashSetTest
+  144  cp HashSetTest.java TreeSetTest.java
+  145  vi TreeSetTest.java 
+  146  javac TreeSetTest.java 
+  147  java TreeSetTest
+  148  vi TreeSetTest.java 
+  149  javac TreeSetTest.java 
+  150  java TreeSetTest
+  151  vi TreeSetTest.java 
+  152  cp HashSetTest.java HashMapTest.java
+  153  vi HashMapTest.java 
+  154  javac HashMapTest.java 
+  155  vi HashMapTest.java 
+  156  javac HashMapTest.java 
+  157  java HashMapTest wednesday
+  158  java HashMapTest saturday
+  159  java HashMapTest monday
+  160  javac HashMapTest.java 
+  161  vi HashMapTest.java 
+  162  javac HashMapTest.java 
+  163  java HashMapTest
+  164  cp HashMapTest.java TreeMapTest.java
+  165  vi TreeMapTest.java 
+  166  javac TreeMapTest.java 
+  167  java TreeMapTest tuesday
+  168  java TreeMapTest sunday
+  169  java TreeMapTest
+  170  history > cmd-14-11-2019.txt

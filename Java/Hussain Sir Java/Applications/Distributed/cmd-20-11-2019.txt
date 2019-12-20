@@ -1,0 +1,61 @@
+    1  cd /SoftDev/Java/Applications/Distributed/
+    2  mkdir RMITest
+    3  cd RMITest/
+    4  mkdir shopping
+    5  vi shopping/ShopKeeper.java
+    6  vi shopping/ItemInfo.java
+    7  javac shopping/ShopKeeper.java 
+    8  ll shopping/
+    9  vi shopping/ShopKeeperImpl.java
+   10  vi ../ServerSocketTest.java 
+   11  vi shopping/ShopKeeperImpl.java
+   12  javac shopping/ShopKeeperImpl.java
+   13  vi shopping/ShopKeeperImpl.java
+   14  javac shopping/ShopKeeperImpl.java
+   15  vi shopping/ShopKeeper.java 
+   16  javac shopping/ShopKeeperImpl.java
+   17  rmiregistry &
+   18  netstat -noa
+   19  netstat -noa |more
+   20  vi Server.java
+   21  javac Server.java
+   22  java Server &
+   23  vi Client.java
+   24  javac Client.java 
+   25  java Client hdd 4
+   26  java Client printer 2
+   27  java Client mouse 600
+   28  java Client mouse 6
+   29  ps
+   30  kill 9807
+   31  kill 9643
+   32  cd ..
+   33  mkdir RMIStateTest.java
+   34  cd RMIStateTest.java/
+   35  mkdir shopping
+   36  vi shopping/Cart.java
+   37  javac shopping/Cart.java
+   38  vi shopping/CartImpl.java
+   39  vi ../ServerSocketTest.java 
+   40  vi shopping/CartImpl.java
+   41  javac shopping/CartImpl.java 
+   42  vi shopping/CartFactory.java
+   43  javac shopping/CartFactory.java
+   44  vi shopping/CartFactoryImpl.java
+   45  javac shopping/CartFactoryImpl.java
+   46  cp ../RMITest/Server.java .
+   47  vi Server.java 
+   48  javac Server.java 
+   49  java Server &
+   50  vi Client.java
+   51  javac Client.java
+   52  java Client cpu hdd motherboard printer keyboard
+   53  ps
+   54  kill 10860
+   55  cd ..
+   56  mv RMIStateTest.java/ RMIStateTest
+   57  ll
+   58  cd RMIStateTest/
+   59  ll
+   60  cd ..
+   61  history > cmd-20-11-2019.txt 

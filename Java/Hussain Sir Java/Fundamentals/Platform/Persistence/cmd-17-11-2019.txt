@@ -1,0 +1,104 @@
+    1  cd /SoftDev/Java/Fundamentals/Platform/Concurrency/
+    2  vi ExecutorTest1.java
+    3  javac ExecutorTest1.java 
+    4  java ExecutorTest1
+    5  vi ExecutorTest1.java
+    6  javac ExecutorTest1.java 
+    7  vi ExecutorTest1.java
+    8  javac ExecutorTest1.java 
+    9  java ExecutorTest1
+   10  cp ExecutorTest1.java ExecutorTest2.java
+   11  vi ExecutorTest2.java
+   12  javac ExecutorTest2.java
+   13  java ExecutorTest2
+   14  vi ExecutorTest2.java
+   15  javac ExecutorTest2.java
+   16  java ExecutorTest2
+   17  vi ForkJoinPoolTest.java
+   18  cp ExecutorTest2.java ForkJoinPoolTest.java 
+   19  vi ForkJoinPoolTest.java
+   20  javac ForkJoinPoolTest.java 
+   21  java ForkJoinPoolTest
+   22  vi ForkJoinPoolTest.java
+   23  javac ForkJoinPoolTest.java 
+   24  vi ForkJoinPoolTest.java
+   25  javac ForkJoinPoolTest.java
+   26  java ForkJoinPoolTest
+   27  vi ForkJoinPoolTest.java
+   28  javac ForkJoinPoolTest.java
+   29  java ForkJoinPoolTest
+   30  vi ForkJoinPoolTest.java
+   31  javac ForkJoinPoolTest.java
+   32  java ForkJoinPoolTest
+   33  vi ForkJoinPoolTest.java
+   34  javac ForkJoinPoolTest.java
+   35  java ForkJoinPoolTest
+   36  vi ForkJoinPoolTest.java
+   37  vi ParallelStreamTest.java
+   38  javac ParallelStreamTest.java
+   39  java ParallelStreamTest
+   40  vi ParallelStreamTest.java
+   41  javac ParallelStreamTest.java
+   42  java ParallelStreamTest
+   43  cd ..
+   44  mkdir Persistence
+   45  cd Persistence/
+   46  vi FileIOStreamTest.java
+   47  javac FileIOStreamTest.java
+   48  cp FileIOStreamTest.java data1.txt
+   49  vi data1.txt 
+   50  java FileIOStreamTest data1.txt data2.txt
+   51  vi data2.txt 
+   52  java FileIOStreamTest data2.txt data3.txt
+   53  vi data3.txt 
+   54  history > cmd-17-11-2019.txt
+   55  vi FileChannelTest.java
+   56  javac FileChannelTest.java
+   57  vi data1.txt 
+   58  java FileChannelTest data1.txt 
+   59  vi data1.txt 
+   60  java FileChannelTest data1.txt 
+   61  vi data1.txt 
+   62  vi DataIOTest.java
+   63  javac DataIOTest.java
+   64  java DataIOTest HDD 4999.95 20000
+   65  java DataIOTest
+   66  vi DataIOTest.java
+   67  javac DataIOTest.java
+   68  java DataIOTest
+   69  vi product.dat 
+   70  cp DataIOTest.java TextIOTest.java
+   71  vi TextIOTest.java 
+   72  javac TextIOTest.java 
+   73  java TextIOTest HDD 4999.95 20000
+   74  java TextIOTest
+   75  vi product.txt 
+   76  ll product.*
+   77  ll
+   78  vi hr/Employee.java 
+   79  javac hr/Employee.java 
+   80  vi hr/Employee.java 
+   81  javac hr/Employee.java 
+   82  vi hr/Employee.java 
+   83  javac hr/Employee.java 
+   84  vi hr/Department.java 
+   85  vi hr/Employee.java 
+   86  vi ObjectSerTest.java
+   87  javac ObjectSerTest.java
+   88  vi ObjectSerTest.java
+   89  javac ObjectSerTest.java
+   90  vi ObjectSerTest.java
+   91  javac ObjectSerTest.java
+   92  vi ObjectSerTest.java
+   93  javac ObjectSerTest.java
+   94  java ObjectSerTest Accounts
+   95  java ObjectSerTest
+   96  ll
+   97  ll dept.dat 
+   98  vi dept.dat 
+   99  vi hr/Employee.java 
+  100  javac hr/Employee.java 
+  101  java ObjectSerTest Accounts
+  102  vi dept.dat 
+  103  java ObjectSerTest
+  104  history > cmd-17-11-2019.txt

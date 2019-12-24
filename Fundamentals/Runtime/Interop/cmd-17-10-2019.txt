@@ -1,0 +1,26 @@
+s:
+doskey np=notepad $*
+dir
+cls
+md Interop
+cd Interop
+np legacy\squaring.c
+copy ptrtypetest.cs legacy\squaring.c
+copy  legacy\squaring.c ptrtypetest.cs
+np ptrtypetest.cs
+csc ptrtypetest.cs
+csc ptrtypetest.cs /unsafe
+ptrtypetest.exe
+csc ptrtypetest.cs /unsafe
+ptrtypetest.exe
+np ijwtax.cpp
+cl /CLR /LD ijwtax.cpp legacy\bin\taxation.obj
+legacy\setup.bat
+cl /CLR /LD ijwtax.cpp legacy\bin\taxation.obj
+np mixmodeasmtest.cs
+csc mixmodeasmtest.cs /r:ijwtax.dll
+mixmodeasmtest.exe 500000 23
+mixmodeasmtest.exe 500000 63
+mixmodeasmtest.exe 500000 83
+mixmodeasmtest.exe 1500000 83
+doskey /history > cmd-17-10-2019.txt

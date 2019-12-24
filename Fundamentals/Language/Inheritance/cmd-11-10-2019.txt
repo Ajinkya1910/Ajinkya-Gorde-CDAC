@@ -1,0 +1,47 @@
+cd MS.NET\Fundamentals\Language
+\init.cmd
+s:
+cls
+md Inheritance
+cd Inheritance
+np payroll.cs
+np baseclasstest1.cs
+csc baseclasstest1.cs payroll.cs
+ildasm baseclasstest1.exe
+baseclasstest1.exe
+csc baseclasstest1.cs payroll.cs
+ildasm baseclasstest1.exe
+baseclasstest1.exe
+csc payroll.cs /t:library
+dir
+csc baseclasstest1.cs /r:payroll.dll
+csc payroll.cs /t:library
+csc baseclasstest1.cs /r:payroll.dll
+baseclasstest1.exe
+csc baseclasstest1.cs /r:payroll.dll
+baseclasstest1.exe
+csc payroll.cs /t:library
+csc baseclasstest1.cs /r:payroll.dll
+baseclasstest1.exe
+csc payroll.cs /t:library
+baseclasstest1.exe
+copy ..\Basics\operatortest.cs interval.cs
+np interval.cs
+bo objectclasstest.cs
+np objectclasstest.cs
+csc objectclasstest.cs interval.cs
+ildasm objectclasstest.exe
+objectclasstest.exe
+csc objectclasstest.cs interval.cs
+ildasm objectclasstest.exe
+ildasm c:\Windows\Microsoft.NET\Framework64\v4.0.30319\mscorlib.dll
+objectclasstest.exe
+csc objectclasstest.cs interval.cs
+ildasm objectclasstest.exe
+objectclasstest.exe
+csc objectclasstest.cs interval.cs
+objectclasstest.exe
+csc objectclasstest.cs interval.cs
+ildasm objectclasstest.exe
+objectclasstest.exe
+doskey /history > cmd-11-10-2019.txt

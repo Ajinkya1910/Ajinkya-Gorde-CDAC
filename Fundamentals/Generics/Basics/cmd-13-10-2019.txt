@@ -1,0 +1,29 @@
+cd MS.NET\Fundamentals\Language
+\init.cmd
+s:
+cd Inheritance
+dir
+np eventtest.cs
+csc eventtest.cs
+eventtest.exe
+csc eventtest.cs
+eventtest.exe
+np eventtest.cs
+csc eventtest.cs
+eventtest.exe
+e:
+subst /d s:
+cd ..
+mkdir Generics
+cd Generics
+subst s: .
+s:
+md Basics
+np autoboxtest.cs
+csc autoboxtest.cs
+ildasm autoboxtest.exe
+csc autoboxtest.cs
+ildasm autoboxtest.exe
+csc autoboxtest.cs
+ildasm autoboxtest.exe
+doskey /history > cmd-13-10-2019.txt

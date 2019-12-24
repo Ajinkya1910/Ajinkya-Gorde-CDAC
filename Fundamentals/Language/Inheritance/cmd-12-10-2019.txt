@@ -1,0 +1,31 @@
+cd MS.NET\Fundamentals\Language
+\init.cmd
+s:
+cls
+cd Inheritance
+dir
+np banking.cs
+csc banking.cs /t:library
+np interfacetest1.cs
+csc interfacetest1.cs /r:banking.dll
+interfacetest1.exe
+csc banking.cs /t:library
+interfacetest1.exe
+csc interfacetest1.cs /r:banking.dll
+interfacetest1.exe
+csc interfacetest1.cs /r:banking.dll
+interfacetest1.exe
+np interfacetest2.cs
+csc interfacetest2.cs
+interfacetest1.exe
+interfacetest2.exe
+csc interfacetest2.cs
+interfacetest1.exe
+interfacetest2.exe
+interfacetest2.exe 3
+interfacetest2.exe four
+csc interfacetest2.cs
+interfacetest2.exe
+interfacetest2.exe 3
+interfacetest2.exe four
+doskey /history > cmd-12-10-2019.txt

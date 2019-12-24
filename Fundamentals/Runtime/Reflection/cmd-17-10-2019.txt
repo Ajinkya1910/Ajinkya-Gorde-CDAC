@@ -1,0 +1,45 @@
+cd MS.NET\Fundamentals\Runtime
+\init.cmd
+s:
+cd Reflection
+cls
+np dynamictest.cs
+csc dynamictest.cs
+dynamictest.exe FormalGreeter
+dynamictest.exe CasualGreeter
+csc dynamictest.cs
+dynamictest.exe FormalGreeter
+dynamictest.exe CasualGreeter
+objaccesstest.exe
+del payroll.dll
+objaccesstest.exe
+ildasm objaccesstest.exe
+np payroll.cs
+csc payroll.cs /t:library
+csc objaccesstest.cs interval.cs /r:payroll.dll
+ildasm objaccesstest.exe
+gacutil /i payroll.dll
+sn -T payroll.dll
+sn -k met.key
+csc /keyfile:met.key payroll.cs /t:library
+sn -T payroll.dll
+gacutil /i payroll.dll
+dir /s c:\Windows\Microsoft.NET\payroll.dll
+objaccesstest.exe
+csc objaccesstest.cs interval.cs /r:payroll.dll
+ildasm objaccesstest.exe
+objaccesstest.exe
+del payroll.dll
+objaccesstest.exe
+np asmloadtest.c
+np asmloadtest.cs
+csc asmloadtest.cs
+asmloadtest.exe e:\MS.NET\Fundamentals\Language\Inheritance\banking.dll
+asmloadtest.exe finance
+asmloadtest.exe payroll,version=1.0.0.0,culture=neutral,publickeytoken=3a724b1d1ddb6c07
+gacutil /l payroll
+gacutil /u "  payroll, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8
+gacutil payroll,version=1.0.0.0,culture=neutral,publickeytoken=8cd3c755a31ade05
+gacutil /u payroll,version=1.0.0.0,culture=neutral,publickeytoken=8cd3c755a31ade05
+gacutil /l payroll
+doskey /history > cmd-17-10-2019.txt

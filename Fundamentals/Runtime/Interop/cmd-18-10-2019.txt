@@ -1,0 +1,85 @@
+dumpbin /exports legacy\bin\asset.dll
+dumpbin /exports legacy\bin\hashenc32.dll
+dumpbin /exports legacy\bin\finance.dll
+dumpbin /exports legacy\bin\asset.dll
+np legacy\include\asset.h
+np pinvoketest1.cs
+csc pinvoketest1.cs
+ildasm pinvoketest1.exe
+csc pinvoketest1.cs
+pinvoketest1.exe 14000 5
+csc pinvoketest1.cs
+pinvoketest1.exe 14000 5
+dumpbin /exports legacy\bin\hashenc32.dll
+np legacy\include\hashenc.h
+copy pinvoketest1.cs pinvoketest2.cs
+np pinvoketest2.cs
+dumpbin /exports legacy\bin\hashenc32.dll
+csc pinvoketest2.cs
+pinvoketest2.exe monday
+csc /platform:x86 pinvoketest2.cs
+pinvoketest2.exe monday
+pinvoketest2.exe tuesday
+csc /platform:x86 pinvoketest2.cs
+pinvoketest2.exe monday
+pinvoketest2.exe NLGBZ
+pinvoketest2.exe NLMGBZ
+np legacy\include\invest.h
+copy pinvoketest1.cs pinvoketest3.cs
+np pinvoketest3.cs
+csc pinvoketest3.cs
+pinvoketest3.exe 50000 3
+csc pinvoketest3.cs
+pinvoketest3.exe 50000 3
+pinvoketest3.exe 50000 5
+doskey /history > cmd-18-10-2019.txt
+cominteroptest1.exe 22 28
+cominteroptest1.exe 12 20
+csc cominteroptest1.cs /r:QuadEq.dll
+cominteroptest1.exe 22 28
+cominteroptest1.exe 12 20
+doskey /history >> cmd-18-10-2019.txt
+csc pinvoketest1.cs
+ildasm pinvoketest1.exe
+csc pinvoketest1.cs
+pinvoketest1.exe 14000 5
+csc pinvoketest1.cs
+pinvoketest1.exe 14000 5
+dumpbin /exports legacy\bin\hashenc32.dll
+np legacy\include\hashenc.h
+copy pinvoketest1.cs pinvoketest2.cs
+np pinvoketest2.cs
+dumpbin /exports legacy\bin\hashenc32.dll
+csc pinvoketest2.cs
+pinvoketest2.exe monday
+csc /platform:x86 pinvoketest2.cs
+pinvoketest2.exe monday
+pinvoketest2.exe tuesday
+csc /platform:x86 pinvoketest2.cs
+pinvoketest2.exe monday
+pinvoketest2.exe NLGBZ
+pinvoketest2.exe NLMGBZ
+np legacy\include\invest.h
+copy pinvoketest1.cs pinvoketest3.cs
+np pinvoketest3.cs
+csc pinvoketest3.cs
+pinvoketest3.exe 50000 3
+csc pinvoketest3.cs
+pinvoketest3.exe 50000 3
+pinvoketest3.exe 50000 5
+doskey /history > cmd-18-10-2019.txt
+guidgen
+regedit
+legacy\bin\quadeq.exe
+np legacy\include\quadeq.idl
+tlbimp /platfom:x64 legacy\bin\quadeq.exe
+tlbimp /platform:x64 legacy\bin\quadeq.exe
+tlbimp
+tlbimp /machine:x64 legacy\bin\quadeq.exe
+dir
+ildasm QuadEq.dll
+ildasm pinvoketest1.exe
+ildasm QuadEq.dll
+np cominteroptest1.cs
+ildasm QuadEq.dll
+csc cominteroptest1.cs /r:QuadEq.dll

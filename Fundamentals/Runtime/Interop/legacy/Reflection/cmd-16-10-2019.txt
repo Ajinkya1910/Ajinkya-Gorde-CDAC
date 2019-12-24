@@ -1,0 +1,39 @@
+cd MS.NET
+cd Fundamentals
+md Runtime
+\init.cmd
+s:
+md Reflection
+cd Reflection
+dir
+copy E:..\Fundamentals\Language\Inheritance\payroll.cs
+copy E:..\Fundamentals\Language\Inheritance\interval.cs
+csc /t:library payroll.cs
+np objaccesstest.cs
+csc objaccesstest.cs interval.cs
+objaccesstest.exe
+csc objaccesstest.cs interval.cs /r:payroll.dll
+objaccesstest.exe
+np interval.cs
+csc objaccesstest.cs interval.cs /r:payroll.dll
+objaccesstest.exe
+csc objaccesstest.cs interval.cs /r:payroll.dll
+objaccesstest.exe
+csc objaccesstest.cs interval.cs /r:payroll.dll
+objaccesstest.exe
+np payroll.cs
+csc payroll.cs /t:library
+objaccesstest.exe
+np finance.cs
+csc finance.cs /t:library
+np earlybindtest.cs
+csc earlybindtest.cs /r:finance.dll
+earlybindtest.exe 500000 
+earlybindtest.exe 500000 Finance.EducationLoan,finance
+earlybindtest.exe 500000 Finance.HomeLoan,finance
+earlybindtest.exe 500000 Finance.BusinessLoan,finance
+cd ..
+dir
+e:
+cd Runtime\Reflection
+doskey /history > cmd-16-10-2019.txt

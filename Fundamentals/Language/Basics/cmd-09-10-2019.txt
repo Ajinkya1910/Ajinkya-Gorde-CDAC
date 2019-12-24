@@ -1,0 +1,43 @@
+mkdir MS.NET\Fundamentals\Language
+cd MS.NET\Fundamentals\Language
+subst s: .
+s:
+notepad helloll.il
+ilasm helloll.il
+dir
+helloll.exe
+notepad helloll.il
+ilasm helloll.il
+helloll.exe
+ilasm helloll.il
+helloll.exe
+notepad hellohl.cs
+csc hellohl.cs
+dir
+hellohl.exe
+csc hellohl.cs
+dir
+hellohl.exe
+np greeting.cs
+doskey np=notepad $*
+np greeting.cs
+csc greeting.cs
+csc greeting.cs /target:library
+dir
+np greetapp.vb
+vbc greetapp.vb
+vbc greetapp.vb /reference:greeting.dll
+greetapp.exe
+ildasm greeting.dll
+ildasm greetapp.exe
+md Basics
+cd Basics
+dir
+np methodtest1.cs
+csc methodtest1.cs
+methodtest1.exe
+csc methodtest1.cs
+methodtest1.exe
+csc methodtest1.cs
+methodtest1.exe
+doskey /history > cmd-09-10-2019.txt

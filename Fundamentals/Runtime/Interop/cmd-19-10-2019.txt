@@ -1,0 +1,26 @@
+ildasm QuadEq.dll
+np legacy\include\finance.idl
+tlbimp /machine:x64 legacy\bin\finance.dll
+ildasm FinanceLib.dll
+np cominteroptest2.cs
+oleview legacy\bin\finance.dll
+csc cominteroptest2.cs /link:FinanceLib.dll
+ildasm cominteroptest1.exe
+ildasm cominteroptest2.exe
+cominteroptest2.exe 500000 10
+regedit
+csc cominteroptest2.cs /l:FinanceLib.dll
+cominteroptest2.exe 500000 10
+cominteroptest2.exe 500000 200
+cominteroptest2.exe 5000000 200
+np legacy\include\finance.idl
+csc cominteroptest2.cs /l:FinanceLib.dll
+cominteroptest2.exe 500000 10
+np legacy\aircargo.wsc
+regedit
+np cominteroptest3.cs
+csc cominteroptest3.cs
+cominteroptest3.exe 5 7700
+csc cominteroptest3.cs
+cominteroptest3.exe 5 7700
+doskey /history > cmd-19-10-2019.txt

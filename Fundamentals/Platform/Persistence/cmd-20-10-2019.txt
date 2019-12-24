@@ -1,0 +1,50 @@
+xmlsertest.exe
+dir dept.*
+np dept.xml
+np xmlhr.cs
+csc xmlhr.cs /t:library
+xmlsertest.exe Accounting
+xmlsertest.exe
+np dept.xml
+np xmllinqtest.cs
+csc xmllinqtest.cs
+xmllinqtest.exe
+xmllinqtest.exe 4
+doskey /history > cmd-20-10-2019.txt 
+np data1.txt
+np binaryiotest.cs
+csc binaryiotest.cs
+binaryiotest.exe HDD 4999.95 20000
+binaryiotest.exe 
+dir
+np product.dat
+copy binaryiotest.cs textiotest.cs
+np textiotest.cs
+csc textiotest.cs
+textiotest.exe HDD 4999.95 20000
+textiotest.exe
+csc textiotest.cs
+textiotest.exe
+np product.txt
+dir product.*
+copy hr.cs serhr.cs
+np serhr.cs
+csc serhr.cs /t:library
+np objsertest.cs
+csc objsertest.cs
+csc objsertest.cs /r:serhr.dll
+objsertest.exe Accounting
+objsertest.exe 
+dir
+np dept.dat
+np serhr.cs
+csc serhr.cs /t:library
+objsertest.exe Accounting
+objsertest.exe
+ren hr.cs xmlhr.cs
+np xmlhr.cs
+csc xmlhr.cs /t:library
+copy objsertest.cs xmlsertest.cs
+np xmlsertest.cs
+csc xmlsertest.cs /r:xmlhr.dll
+xmlsertest.exe Accounting

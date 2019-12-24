@@ -1,0 +1,22 @@
+cd MS.NET\Fundamentals\Generics
+\init.cmd
+s:
+cd Collections
+copy ..\Basics\iterationtest.cs linqtest.cs
+np linqtest.cs
+ren linqtest.cs linqtest1.cs
+csc linqtest1.cs
+linqtest1.exe
+np linqtest1.cs
+csc linqtest1.cs
+linqtest1.exe
+csc linqtest1.cs
+linqtest1.exe
+csc linqtest1.cs
+linqtest1.exe
+np linqtest2.cs
+csc linqtest2.cs interval.cs
+linqtest2.exe
+linqtest2.exe 200
+linqtest2.exe 300
+doskey /history > cmd-15-10-2019.txt

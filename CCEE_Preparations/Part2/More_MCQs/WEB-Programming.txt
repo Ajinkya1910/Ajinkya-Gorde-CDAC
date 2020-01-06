@@ -1,0 +1,247 @@
+================== WEB ==================
+========================================
+Q. Which of the following tags is not written in the <head> section of a HTML page
+a. <meta>
+b. <noscript>
+c. <link>
+d. <abbr>
+Answer:- 
+
+Q. Which of the following is not a HTML5 Element
+a. <canvas>
+b. <figure>
+c. <progress>
+d. <legend>
+Answer:- C
+
+Q. Inside which HTML element do we put the Javascript
+a. <javascript>
+b. <script>
+c. <js>
+d. <scripting>
+Answer:- B
+
+Q. How can you add a comment in a Javascript
+a. <!--This is a comment-->
+b. "This is a comment"
+c. //This is a comment
+d. <!---This is a comment -->
+Answer:-
+ 
+Q. Which jQuery method should be used to deal with name conflicts 
+a. noConflict()
+b. noNameConflict()
+c. conflict()
+d. nameConflict()
+Answer:- 
+
+Q. Accordion widget gives 
+a. customised datapicker
+b. resizable element
+c. collapsible content panels
+d. tooltip
+Answer:- 
+
+Q. JSON stands for
+a. JavaScript Over Network
+b. is the code name for the next release of Prototype
+c. stands for JavaScript object notation
+d. is the code name for the next JavaScript
+Answer:- 
+
+Q. What does XSD stand for
+a. Xml Schema Description
+b. Xml Schema Developer
+c. Xml Schema Defination
+d. Xml Style Description
+Answer:- 
+
+Q. For the XML parser to ignore a certain section of your XML document which syntax is correct
+a. <PCDATA> Text to be ignore </PCDATA>
+b. <CDATA> Text to be ignore </CDATA>
+c. <![CDATA [ Text to be ignore ]]>
+d. <xml:CDATA[ Text to be ignore ]>
+Answer:- 
+
+Q. The term XSS refers to ______ 
+a. eXtended site Scripting
+b. eXtreme Secured Services
+c. Cross Site Scripting
+d. None of these
+Answer:- 
+
+Q. What is an example of vulnerabilities in web-based programs and environments
+a. SQL injection
+b. Cross-site scripting
+c. All these mentioned
+d. None of these
+Answer:- 
+
+Q. To match the text node (in XSLT) the syntax will be
+a. <xsl:template match=" text">
+b. <xsl:template match-text=" text">
+c. <xsl:template match=text()>
+d. <xsl:template match=" text()">
+Answer:- 
+
+Q. What is the difference between DOM and SAX
+a. DOM is not event driven and builds up the whole memory
+b. SAX is event driven and requires less space
+c. DOM and SAX are packages
+d. None of these
+Answer:- 
+
+Q. Which option will you select to add or edit menu item in Joomla
+a. Article Manager
+b. Media Manager
+c. Menu Manager
+d. Category Manager
+Answer:- 
+
+Q. Which option will you select to add a Contact us page in Joomla
+a. Article Manager
+b. Media Manager
+c. Menu Manager
+d. Category Manager
+Answer:- 
+
+Q. Which XML based protocol is used to transfer between computers
+a. HTTP
+b. SOAP
+c. XMLHTTPREQUEST
+d. FTP
+Answer:- 
+
+Q. CSRF is stand for
+a. Cross-site request
+b. Cross-script format
+c. Cascading script format
+d. Cross site required format
+Answer:- 
+
+Q. Which type of server technology is used by Joomla
+a. Joomla
+b. Apache
+c. PHP
+d. All of these
+Answer:- 
+
+Q. In which PHP file the central configuration data for Joomla contained
+a. config.php
+b. configuration.php
+c. setting.php
+d. None of these
+Answer:- 
+
+Q. Which HTML element is used to create Data Island
+a. <XML>
+b. <ISland>
+c. <data_island>
+d. <Xml_island>
+Answer:- 
+
+Q. Which attribute is used to bind the HTML element with DSO
+a. DATASOURCE
+b. DATAFIELD
+c. DATASRC
+d. DATAFLD
+Answer:- 
+
+Q. Which of the following statement about XML are true
+a. An XML document may contain several root elements
+b. XML element and attribute names must be lower-case
+c. An XML document must have xml declaration
+d. All XML tags need not be closed
+Answer:- 
+
+Q. Which one of these technologies is NOT used in AJAX
+a. CSS
+b. DOM
+c. DHTML
+d. FLASH
+Answer:- 
+
+Q. Which statement is true
+a. To use JQuery, you must buy jQuery library at www.jquery.com
+b. To use JQuery, you dont have to do anything. Most browser have the jQuery library built in the browser
+c. To use jQuery, you can refer to a hosted jQuery library at Google
+d. None of these
+Answer:- 
+
+Q. Which jquery method should be used to deal with name conflicts
+a. noConflict{}
+b. noNameConflict{}
+c. conflict{}
+d. nameConflict{}
+Answer:- 
+
+Q. Which method can be used to display the value of the specified attribute
+a. attribute
+b. getAttribute()
+c. showAttribute()
+d. printAttribute()
+Answer:- 
+
+Q. Which of the following is not a session function
+a. session_decode
+b. session_destroy
+c. session_id
+d. session_pw
+Answer:- 
+
+Q. The function setcookie() is used to
+a. Enable or disable cookie support
+b. Declare cookie variables
+c. Store data in cookie variables
+d. All of these
+Answer:- 
+
+Q. Which of the following variables is not related to file uploads
+a. max_file_size
+b. max_executino_time
+c. post_max_size
+d. max_input_time
+Answer:- 
+
+Q. What is the use of CSV files in PHP
+a. Share tabular data between programs
+b. Represent graphical data
+c. To present text data
+d. To handle PDF data
+Answer:- 
+
+Q. PHP command line interface cannot be used to 
+a. Run PHP script as standalone program
+b. Write GUI application
+c. Run external program from inside PHP script
+d. None of the options
+Answer:- B
+
+
+Q. Which of the following statement are false for JavaScript
+a. Variable names are not case sensitive
+b. Variable names must begin with a letter or the underscore character
+c. Var is used to declare a variables
+d. Both B and C above
+Answer:- 
+
+Q. What is the difference between XML & HTML
+a. HTML is used for exchanging data, XML is not
+b. XML is used for exchanging data, HTML is not
+c. HTML can have user defined tags, XML cannot
+d. Both B & C 
+Answer:- 
+
+Q. Which tags are most commonly used by search engines
+a. Heading
+b. Title
+c. Paragraph
+d. All of these
+Answer:- 
+
+Q. What is the <br> tag for
+a. 
+b. 
+c. Line break
+d. 
+Answer:- C

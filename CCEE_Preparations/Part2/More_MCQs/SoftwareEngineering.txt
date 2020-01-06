@@ -1,0 +1,486 @@
+================== SE ==================
+========================================
+
+Q. For which of the following practices does requirements engineering provide appropriate mechanism and tools
+a. Analyzing need
+b. Unambiguous specification of the solution
+c. Validating the specification
+d. All of these
+Answer:- 
+
+
+Q. Which of the following is a common method of requirements elicitation
+a. Transaction Analysis
+b. Risk Assessment
+c. Implementing the system
+d. Observation
+Answer:- 
+
+
+Q. The goal of testing is to expose _____ defects in a software system before it is out ti use
+a. Latent
+b. Already present
+c. Current
+d. Runtime
+Answer:- 
+
+
+Q. Which of the following is not a characteristic of software
+a. Software is tangible
+b. A change to a piece of code may implicitly the functions of the rest of the code
+c. Software id configurable
+d. Software does not wear and tear
+Answer:- 
+
+
+Q. The person or persons in charge of the tracking and the updates for the scrum is called the
+a. Product Owner
+b. Scrum Master
+c. Consulting Expert
+d. Solo Scrum
+Answer:- 
+
+
+Q. What Agile principle can help in chaordic situation
+a. Incremental Delivery
+b. Continuous Integration
+c. PMO Policy
+d. Latest Technology
+Answer:- 
+
+
+Q. "Are we doing it right?" is
+a. Verification
+b. Validation
+c. Boundary Value Analysis
+d. All of these
+Answer:- 
+
+
+Q. "is this what customer wanted" is
+a. interaction use case
+b. generalizing use case
+c. system analysis use case
+d. abstract use case
+Answer:- 
+
+
+Q. What type of class relationship can be read as "Object A contains object B and object B is part of object A"
+a. Aggregation
+b. generalization
+c. persistent
+d. transient
+Answer:- 
+
+
+Q. A regression test
+a. Will always be automated
+b. Will help ensure unchanged areas of the software have not been affected
+c. Will help ensure changed areas of the software have not been affected
+d. Can only be run during user acceptance testing
+Answer:- 
+
+
+Q. Test are prioritized so that
+a. you shorten the time required in the time available
+b. you do more effective testing
+c. you find more faults
+d. 
+Answer:- 
+
+
+Q. Analysis models depict software in which three representations
+a. architecture, interface, component
+b. cost, risk, schedule
+c. information, function, behavior
+d. 
+Answer:- 
+
+
+Q. Which of the following is not one of the principles of good coding
+a. Create unit tests before you begin coding
+b. Create a visual layout that aids understanding
+c. Keep variable names short so that code is compact
+d. Write self-documenting code, not program documentation
+Answer:- 
+
+
+Q. In software project management, 4 Ps have managed in following order
+a. Project, People, Product, Process
+b. Process, Problem, People, Product
+c. People, Product, Process, Project
+d. Product, People, Process, Problem
+Answer:- 
+
+
+Q. A tool that supporta traceability, recording of incidents or scheduling of tests is called 
+a. a dynamic analysis tools
+b. a test execution tool
+c. a debugging tool
+d. a configuration management
+Answer:- 
+
+
+Q. Which of the following is not a quality characteristic listed in ISO 9126
+a. Functionality
+b. Usability
+c. Supportability
+d. Maintainability
+Answer:- 
+
+
+Q. Which of the following can be implemented in the Iterative Models
+a. Waterfall Model
+b. Evolutionary Model
+c. Component Based Development Model
+d. All of these
+Answer:- 
+
+
+Q. Data flow diagram can be supported with specification
+a. Software requirement specification
+b. Use case specification
+c. Processing Specification
+d. Data Specification
+Answer:- 
+
+
+Q. Risk tables are sorted by
+a. probability and cost 
+b. probability and size
+c. probability and impact 
+d. probability and exposure
+Answer:- 
+
+
+Q. The first step in project planing is
+a. determine a budget
+b. select a team organizational model
+c. determine the project constraints
+d. establish the objectives and scope
+Answer:- 
+
+
+Q. Use-cases are scenarios that describe
+a. How software is to be used in a given situation
+b. How case tools will be used to construct the system
+c. The test cases for a software product
+d. 
+Answer:- 
+
+
+Q. The reverse engineering activity involves seeking to understand
+a. Data
+b. Processing
+c. User interface
+d. All of these
+Answer:- 
+
+
+Q. One of the most important attributes for software product metric is that should be
+a. Easy to compute Qualitative in nature
+b. Reliable over time
+c. Widely acceptance
+d. 
+Answer:- 
+
+
+Q. Which of the following is true for CMMI levels
+a. Managed-process characteristic for organization and is proactive
+b. define-process measured and controlled
+c. initial-process are fully controlled
+d. optimized-focus on process improvement
+Answer:- 
+
+
+Q. What is the solution for User-Developer Syndrome
+a. Gain Tool Knowledge
+b. Gain more technical knowledge
+c. Gain Domain knowledge
+d. None of these
+Answer:- 
+
+
+Q. Scheduling produces
+a. Work Breakdown Structure
+b. Activity bar chart
+c. Cost/benefit analysis
+d. SRS
+Answer:- 
+
+
+Q. The most important feature of spiral model is
+a. requirement analysis
+b. risk management
+c. Quality management
+d. Configuration management
+Answer:- 
+
+
+Q. In the spiral model risk analysis is perfomed
+a. In the first and second loop
+b. In the first loop
+c. In every loop
+d. before using spiral model
+Answer:- 
+
+
+Q. The desired level of coupling is
+a. No coupling
+b. Control coupling
+c. Common coupling
+d. Data coupling
+Answer:- 
+
+
+Q. A client requests you to develop a system as soon as possible. The system to be developed will be used to issue tickets, Which process model will you use
+a. Waterfall Model
+b. Component Based Model
+c. Spiral Model
+d. None of these
+Answer:- 
+
+
+Q. A program P calls two subprograms P1 and P2. P1 can fail 50% times and P2 can fail 40% times. P can fail
+a. 50%
+b. 60%
+c. 10%
+d. 70%
+Answer:- 
+
+
+Q. Which one is minimum effort distribution in phases of software development
+a. Requirement analysis
+b. Design phases
+c. Coding
+d. Testing
+Answer:- 
+
+
+Q. How many of design phases
+a. one 
+b. two
+c. three
+d. four
+Answer:- 
+
+
+Q. Which of the following is not included in failure costs
+a. rework
+b. repair
+c. failure mode analysis
+d. none of these
+Answer:- 
+
+
+Q. Which requirements are the foundation from which quality is measured
+a. Hardware
+b. Software
+c. Programmers
+d. None of these
+Answer:- 
+
+
+Q. Degree to which design specification are followed in manufacturing the product is called
+a. Quality Control
+b. Quality of conformance
+c. Quality Assurance
+d. None of these
+Answer:- 
+
+
+Q. Which of the following is not an appraisal cost in SQA
+a. inter-process inspection
+b. maintenance
+c. quality plannig
+d. testing
+Answer:- 
+
+
+Q. Build & fix model is suitable for programming exercises of _____ (LOC) line of code
+a. 100-200
+b. 200-400
+c. 400-1000
+d. above 1000
+Answer:- 
+
+
+Q. RAD Model has
+a. 2 phases
+b. 3 phases
+c. 5 phases
+d. 6 phases
+Answer:- 
+
+
+Q. Which of the following statements regarding Build & Fix Model is wrong
+a. No room for structured design
+b. Code soon becomes unfix-able & unchangeable
+c. Maintenance is practically not possible
+d. It scales up well to large project
+Answer:- 
+
+
+Q. Select the option suit the Manifests for Agile software development
+a. Individuals and interactions
+b. Working software
+c. Customer collaboration
+d. All the mentioned
+Answer:- 
+
+
+Q. Agile software development is based on
+a. incremental development
+b. Iterative development
+c. Linear development
+d. Both A and B
+Answer:- 
+
+
+Q. Which one of the following is not an agile method
+a. XP
+b. 4GT
+c. AUP
+d. FTP
+Answer:- 
+
+
+Q. How many phases are there in Scrum
+a. Two
+b. Three
+c. Four
+d. Scrum is an agile method which mean it does not have phases
+Answer:- 
+
+Q. Which of the following is not project management goal
+a. Keeping overall cost within budget
+b. Delivering the software to the customer at the agreed time
+c. Avoiding customer complaints
+d. 
+Answer:- 
+
+Q. Which of the following is not considered as a risk in project management
+a. Specification delays
+b. Product competition
+c. Testing
+d. Staff turnover
+Answer:- 
+
+
+Q. Quality planning is the process of developing a quality plan for
+a. team
+b. project
+c. customer
+d. project manager
+Answer:- 
+
+
+Q. Which testing tool does a simple job enforcing standards in a uniform way of many programs
+a. Static Analyzer
+b. Code Inspector
+c. Standard Enforcer
+d. Both B & C
+Answer:- 
+
+
+Q. Software testing with real data in real environment is known as _____
+a. alpha testing
+b. beta testing
+c. regression testing
+d. None of these
+Answer:- 
+
+
+Q. Which of the following testing tools examine program systematically & automatically
+a. Code Inspector
+b. Static Analysis
+c. Standard Enforcer
+d. Coverage Analysis
+Answer:- 
+
+
+Q. Which testing tools is responsibile for documenting programs
+a. Test/File Generator
+b. Test Harness System
+c. Test Archiving System
+d. Coverage Analysis
+Answer:- 
+
+
+Q. RISK management is one of the most important job for
+a. Client
+b. Investor
+c. Production team
+d. Project manager
+Answer:- 
+
+
+Q. Which of the following risk is the failure of a purchase component to perfom as expected
+a. Product risk
+b. Project risk
+c. Business risk
+d. Programming risk
+Answer:- 
+
+
+Q. Which of the following term is best defined by the statement: "The underlying technology on which the system is built superseded by new technology"
+a. Technology change
+b. Product competition
+c. Requirement change
+d. None of these
+Answer:- 
+
+
+Q. Beta testing is done by
+a. Developer
+b. testers
+c. Users
+d. All the mentioned
+Answer:- 
+
+
+Q. Which of the following risk are derived from the organizational environment where the software is being developed
+a. People risk
+b. Technology risk
+c. Estimatio risk
+d. Organizational risk
+Answer:- 
+
+
+Q. Which of the following team describe testing
+a. Finding broken code
+b. Evaluting deliverable to find errors
+c. A stage of all projects
+d. None of mentioned
+Answer:- 
+
+
+Q. What is Cyclomatic complexity
+a. Black box testing
+b. Yellow box testing
+c. White box testing
+d. Green box testing
+Answer:- 
+
+Q. Lower & upper limits are present in which chart
+a. Run chart 
+b. Bar chart
+c. Control chart
+d. None of these
+Answer:- 
+
+
+Q. Maintenance testing is perfomed using which methodology
+a. Retesting
+b. Sanity testing
+c. Breadth test and depth test
+d. Confirmation testing
+Answer:- 
+
+
+Q. Which of the following is/are White box technique
+a. Statement Testing
+b. Decision Testing
+c. Condition Coverage
+d. All of the mentioned
+Answer:- 

@@ -1,0 +1,126 @@
+Q. The use of a DTD in XML development is
+a. required when validating XML document
+b. no longer necessary after the XML editor has been customized
+c. used to direct conversion using an XSLT processor
+d. a good guide to populating a templates to be filled in when generating an XML document automatically
+Answer: 
+
+Q. Which node type can be selected in XPath with * ?
+a. Comment node
+b. Attributes
+c. Root node
+d. Text node
+Answer: 
+
+Q. PCDATA stands for
+a. Parsed Character Data 
+b. Pure Character Data
+c. Predefined Character Data
+d. Parse Character Data
+Answer: 
+
+Q. Which provide extra information about XML elements
+a. Attributes
+b. Entities
+c. None of these
+d. Tags
+Answer: 
+
+Q. Attributes standalone="no" should be included in XML declare if a document is
+a. is linked to an external XSL stylesheet
+b. has external general references
+c. has processing instructions
+d. has an external DTD
+Answer: 
+
+Q. Which term among the following used about the text data that will be parsed by the XML parser
+a. PCDATA
+b. CDDATA
+c. DATA
+d. TEXT
+Answer: 
+
+Q. Which of the following is used to specify the attribute list of an element
+a. ATTLIST
+b. ?ATTLIST
+c. !ATTLIST
+d. #ATTLIST
+Answer: 
+
+Q. Which of the following instruct the browser which stylesheet to use
+a. <xml-stylesheet type="text/xsl" href="cd.xsl">
+b. <xml-stylesheet type="text/xsl" xsl="cd.xsl">
+c. <?xml-stylesheet type="text/xsl" href="cd.xsl"?>
+d. <?xml-stylesheet type="text/xsl" xsl="cd.xsl">
+Answer: 
+
+Q. Which is the input need to be given to perform SQL injection attack on below SQL query to drop table users
+a. userInput="1: DROP TABLE users;--"
+b. userInput="1: DROP users TABLE;--"
+c. userInput="1: DROP TABLE users--;"
+d. userInput="1: DROP TABLE; users;--"
+Answer: 
+
+Q. Which of the following languages are the primary targets of cross-site scripting
+a. JQUERY
+b. SQL
+c. XSLT
+d. JavaScript
+Answer: 
+
+Q. The term XSS refers to _______
+a. eXtended site Scripting
+b. eXtreme Secured Services
+c. Cross Site Scripting
+d. None of these
+Answer: 
+
+Q. _______ is time based SQL injection attack
+a. Quick detection 
+b. Initial Exploitation
+c. Blind SQL Injection
+d. Inline Comments
+Answer: 
+
+Q. Which attack invloves tricking the user into inadvertently issung an HTTP request to a wesite without their knowledge, usually with malicious intent
+a. Application-Layer Attack
+b. Cross Site Scripting (XSS)
+c. Denial-of-Service Attack (DOS)
+d. Cross Site Request Forgery (CSRF)
+Answer: 
+
+Q. Which of the following script is example of SQL Injection
+a. var Shipcity;
+   Shipcity = Request.form("Shipcity")
+   var sql = "select * from OrderTable where Shipcity = " + Shipcity + "";
+
+   b. var Shipcity;
+   Shipcity = Request.form("Shipcity")
+   
+c. var Shipcity;
+   var sql = "select * from OrderTable where Shipcity = " + Shipcity + "";
+
+d. None of these
+Answer: 
+
+Q. Which type of testing ensures that a system can gracefully handle invalid input or unexpected user behaviour
+a. Positive testing
+b. Negative testing 
+c. SQL injection
+d. Vulnerability testing
+Answer: 
+
+Q. Which of the following is not correct about AJAX
+a. AJAX cna make asynchronous calls
+b. AJAX works only with java based server side technologies
+c. AJAX can make synchronous calls
+d. AJAX can load part of the page
+Answer: 
+
+Q. What does the XMLHttRequest object accomplish in AJAX
+a. Its the programming languages used to develop AJAX applications
+b. It provides a means of exchanging structured data between the web server and client
+c. It provides the ability to asynchronously exchange data between web browser and a web server
+d. It provides the ability to mark up and style the display of web-page text
+Answer: 
+

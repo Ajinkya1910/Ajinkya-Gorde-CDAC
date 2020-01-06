@@ -1,0 +1,378 @@
+Q. System.Web.UI namespace contain which class
+A. web control
+B. HTML control
+C. Both A & B
+D. none
+Answer: C
+
+Q. Which is code render block?
+A. <script runat="server"><script>
+B. </*...*/>
+C. <%--...--%>
+D. <%=...%>
+Answer: D
+
+Q. How can we include language in .aspx page?
+A. <%@ Page Language="C#"%>
+B. <%@ language="vb"%>
+C. None
+D. Both
+Answer: A
+
+Q. Where we declare our directive
+A. Top
+B. Bottom
+C. Middle
+D. All of the above
+Answer: A
+
+Q. In which keyword we are using for including namespace in our .aspx page
+A. using
+B. namespace
+C. Import
+D. All of the above
+Answer: A
+
+Q. Web.config file is used
+A. Configure the time that the server-side code behind module is called
+B. To store the global information and variable defination for the application
+C. To configure the web server
+D. To configure the web browser
+Answer: C
+
+Q. Merge more then one server and make large server it is called
+A. internate
+B. web services
+C. web farm
+D. none
+Answer: C
+
+Q. Which configuration file is global configuration file
+A. module.config
+B. machine.config
+C. server.config
+D. none of the above
+Answer: B
+
+Q. In which application you can use the file define global variable and that can be access
+from any web page in web application
+A. aspx file
+B. web.config file
+C. global.asax file
+D. .cs file
+Answer: C
+
+Q. In server side comment which syntax is used
+A. <% %>
+B. <%= %>
+C. <%-- --%>
+D. none of above
+Answer: C
+
+Q. Which protocol is stateless protocol
+A. HTML
+B. FTP
+C. IP
+D. HTTP
+Answer: D 
+
+Q. Which stores small amount of data that is store in text file on the client system
+A. session state
+B. application state
+C. cookies
+D. none of these
+Answer: C
+
+Q. Which is store state on server side?
+A. query string
+B. hidden fields
+C. view state
+D. application state
+Answer: D
+
+Q. The information that is appended to the end of the page URL that is called
+A. control state
+B. session state
+C. query string
+D. view state
+Answer: C
+
+Q. Which method is used when cancel the current session?
+A. session_end()
+B. Abandon()
+C. remove()
+D. clear()
+Answer: C
+
+Q. Which is the login control?
+A. login
+B. Registration forms
+C. Both A & B
+D. none
+Answer: C
+
+Q. Which control understand web browser?
+A. HTML control
+B. Web control
+C. Both A & B
+D. none
+Answer: A
+
+Q. How can we access the previous page control
+A. Request.Form
+B. Request.QueryString
+C. PreviousPage.control 
+D. None of the above
+Answer: 
+
+Q. Which validator control will check a users entry is between specified lower and upper boundaries
+A. CustomValidator
+B. CompareValidator
+C. RangeValidator
+D. None of the above
+Answer: 
+
+Q. ADO was designed for
+A. client server
+B. client
+C. server
+D. none of the above
+Answer: 
+
+Q. local copy of relevant portion of the database is called
+A. Dataset
+B. DataProvider
+C. DataAdapter
+D. None
+Answer: 
+
+Q. Web service save with which extension
+A. Aspx
+B. asmx
+C. asax
+D. config
+Answer: 
+
+Q. Which directive is used in webservices
+A. @WebService
+B. @ page
+C. both
+D. none
+Answer: 
+
+Q. Which parameter represents the value of an HTML form field?
+A. ProfileParameter
+B. FormParameter
+C. ControlParameter
+D. none
+Answer:
+
+Q. To display single data item in an HTML table which control is used
+A. GridView
+B. DataList
+C. DetailView
+D. None
+Answer: 
+
+Q. Asp.net framwork compatible with which language
+A. C#
+B. VB
+C. J#
+D. all
+Answer: 
+
+Q. Which is wrong DataControl
+A. GridView
+B. DataList
+C. DetailView
+D. none
+Answer: 
+
+Q. Default Session stored in
+A. SQL Server
+B. StateServer
+C. clnProc
+D. None
+Answer: 
+
+Q. InValidationExpression \S matches
+A. White Space
+B. Single Value
+C. noneWhiteSpace
+D. None of the above
+Answer: 
+
+Q. In DateTime Class Now is 
+A. method
+B. Property
+C. Event
+D. None of the above
+Answer: 
+
+Q. Which is not StateManagement option
+A. Session 
+B. QueryString
+C. ControlState
+D. None of the above
+Answer: 
+
+Q. Whichis wrong DataControls
+A. GridView
+B. DataList
+C. DetailView
+D. none
+Answer:
+
+Q. Deafult Session stored in
+A. SQL Server
+B. StateServer
+C. cinProc
+D. None
+Answer:
+
+Q. Which is not a feature of .net C# language
+A. C# is case sensitive
+B. C# gets converted into MSIL after compiltaion
+C. C# language can be used for developing any type of application
+D. 
+Answer:
+
+Q. What is typ safety in .net framwork 
+A. An object type can be converted into another object type
+B. An object type cannot be converted into another object type
+C. All the objects have object base class
+D. Object ref must go to the heap
+Answer:
+
+Q. In MS .Net assembly strong name key file contains
+A. Public Key only
+B. Private Key only
+C. Public key Token and Private Key Token
+D. Public Key and Private Key
+Answer:
+
+Q. Which namespace needs to be used for ArrayList Collection
+A. using System.Collection
+B. using System.Collection.Generic
+C. using System.Collection.ArrayList
+D. using Collection
+Answer:
+
+Q. What is an Attribute in terms of .NET Applicaiton
+A. Attributes are system programming
+B. Attributes are base classes for all the classes 
+C. Attributes are metadata which is read by CLR
+D. Attributes defines execution of .net program
+Answer:
+
+Q. Which interface defines the basic extension method for LINQ
+A. IComparable<T>
+B. IList
+C. IEnumerable
+D. IQueryable<T>
+Answer:
+
+Q. Which of these are the features of App.xaml? (Select more than one)
+A. Create Windows object at StartUp
+B. Describe how the Application would exit
+C. List all the Windows that it can create
+D. Lists all the References of the Application
+Answer:
+
+Q. Will finally block get executed if the exception had not occured?
+A. Yes
+B. No
+C. Sometime
+D. Depends on the Exception type
+Answer:
+
+Q. Which of these statements correctly declares a two dimensional array in C#?
+A. int[][] myArray
+B. int[2] mymArray
+C. System.Array[2] myArray
+D. int[,] myArray
+Answer:
+
+Q. What is a multicast delegate?
+A. A delegate called multiple times
+B. A delegate having multiple handler assignes to it
+C. A delegate whichi has multiple implementations
+D. All of the above
+Answer:
+
+Q. Which of the following is first level of compilation in the .Net language?
+A. CLR
+B. IL
+C. Native Code
+D. Assembly Code
+Answer:
+
+Q. Assemblies are in .Net which type?
+A. Public
+B. Private
+C. Friendly
+D. Global
+Answer:
+
+Q. What is the expansion of WCF
+A. Windows Communication Foundation
+B. Windows Contract Foundation
+C. Windows Consumer Foundation
+D. Windows Customer Foundation
+Answer:
+
+Q. You thought of passing custom data type to and from WFC service. What you should do?
+A. Use data control for classes and structs that represent the data
+B. Use DataContract attribute on the custom data type as well as on the members of the custom data type, too
+C. Use DataContract attribute on the data data and Datamember attribute on only either of the public data member or properties representing private data members
+D. Use DataContract attribute on the data type and DataMember attribute on only either of the public data members or public properties representing private data member
+Answer:
+
+Q. Which method would give always the first occurence of the result in a LINQ expression
+A. First
+B. FisrtOrDefault
+C. Single
+D. SingleOrDefault
+Answer:
+
+Q. Which method will be use to reflect the changes to actual database?
+A. SubmitData
+B. UpdateData
+C. SubmitChanges
+D. UpdateDatabase
+Answer:
+
+Q. You can get Type object of a class using.............
+A. The typeof() operator
+B. The type_id() operator
+C. The Type() operator
+D. The isType() method
+Answer:
+
+Q. Which kind of data is stored in ViewState object?
+A. ViewState can store only Serializable objects
+B. ViewState can store only BOXED values
+C. ViewState can store only Data bound objects
+D. ViewState can store any form of data
+Answer: 
+
+Q. Which language will be use to query the database?
+A. SQL
+B. T-SQL
+C. PL/SQL
+D. LINQ
+Answer:A
+
+Q. Which namespace is used to host and consume the WCF service?
+A. System.ServiceModel
+B. System.Webservice
+C. System.WCFService
+D. System.Services
+Answer:
+
+Q. How can you returm more than one value from a function
+A. By writing multiple return statements
+B. Using goto statement
+C. 
+D. 
+Answer:

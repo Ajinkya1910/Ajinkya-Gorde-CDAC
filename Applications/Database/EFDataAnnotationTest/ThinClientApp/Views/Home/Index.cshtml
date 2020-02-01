@@ -1,0 +1,44 @@
+﻿@model IEnumerable<ThinClientApp.Models.Product>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ThinClientApp</title>
+</head>
+<body>
+    <h1>List of Products</h1>
+    <table class="table" border="1">
+        <tr>
+            <th>Product No</th>
+            <th>Unit Price</th>
+            <th>Current Stock</th>
+            <th>Actions</th>
+        </tr>
+    
+    @foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Stock)
+        </td>
+        <td>
+            @Html.ActionLink("Orders", "Details", new { id = item.Id })
+            @Html.ActionLink("Edit", "Edit", new { id = item.Id })
+        </td>
+    </tr>
+    }
+    
+    </table>
+</body>
+</html>

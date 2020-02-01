@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>WebUIApp</title>
+    </head>
+    <body>
+    <h1>Welcome Customer</h1>
+    <form>
+        <p>
+            <b>Item Name: </b>
+            <input type="text" id="itemText" required="required" />
+            <input type="button" id="checkButton" value="Check" />
+        </p>
+        <p>
+            <b>Quantity : </b>
+            <input type="text" id="quantityText" required="required" />
+            <input type="button" id="buyButton" value="Buy" />
+        </p>
+        <b>
+            <div id="outputDiv"></div>
+        </b>
+    </form>
+    <script>
+            let itemText = document.getElementById("itemText");
+            let quantityText = document.getElementById("quantityText");
+            let outputDiv = document.getElementById("outputDiv");
+            document.getElementById("checkButton").onclick = async function(){
+                let response = await fetch(`api/shop/${itemText.value.toLowerCase()}`);
+                if(response.ok){
+                    let result = await response.json();
+                    quantityText.value = result.CurrentStock;
+                }else
+                    quantityText.value = 0;
+            };
+            document.getElementById("buyButton").onclick = async function(){
+                const request = {
+                    method: 'post',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({
+                        Item: itemText.value.toLowerCase(),
+                        Quantity: quantityText.value
+                    })
+                };
+                let response = await fetch('api/shop', request);
+                if (response.ok) {
+                    let order = await response.json();
+                    outputDiv.innerText = "Total payment is " + parseFloat(order.Payment).toFixed(2);
+                }else
+                    outputDiv.innerText = "Order failed!";
+            };
+    </script>
+</body>
+</html>

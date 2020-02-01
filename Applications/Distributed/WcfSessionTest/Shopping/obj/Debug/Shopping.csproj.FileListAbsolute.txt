@@ -1,0 +1,5 @@
+E:\MS.NET\Applications\Distributed\WcfSessionTest\Shopping\bin\Debug\Shopping.dll
+E:\MS.NET\Applications\Distributed\WcfSessionTest\Shopping\bin\Debug\Shopping.pdb
+E:\MS.NET\Applications\Distributed\WcfSessionTest\Shopping\obj\Debug\Shopping.csprojAssemblyReference.cache
+E:\MS.NET\Applications\Distributed\WcfSessionTest\Shopping\obj\Debug\Shopping.dll
+E:\MS.NET\Applications\Distributed\WcfSessionTest\Shopping\obj\Debug\Shopping.pdb

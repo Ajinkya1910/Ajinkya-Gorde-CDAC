@@ -1,0 +1,1 @@
+@netsh http add urlacl url=http://*:8001/ user="NT AUTHORITY\Authenticated Users"

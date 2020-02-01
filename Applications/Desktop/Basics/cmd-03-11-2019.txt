@@ -1,0 +1,17 @@
+cd MS.NET\Applications\Desktop
+\init.cmd
+s:
+cd Basics
+cls
+np wpfplaintest.cs
+csc winchildtest.cs
+csc wpfplaintest.cs
+np wpf.rsp
+csc @wpf.rsp wpfplaintest.cs
+copy wpfplaintest.cs wpfdatatest.cs
+np wpfdatatest.cs
+csc @wpf.rsp wpfdatatest.cs
+copy wpfplaintest.cs wpfmediatest.cs
+np wpfmediatest.cs
+csc @wpf.rsp wpfmediatest.cs
+doskey /history >> cmd-03-11-2019.txt

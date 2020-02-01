@@ -1,0 +1,4 @@
+s:
+cd Basics
+start server
+doskey /history >> cmd-07-11-2019.txt

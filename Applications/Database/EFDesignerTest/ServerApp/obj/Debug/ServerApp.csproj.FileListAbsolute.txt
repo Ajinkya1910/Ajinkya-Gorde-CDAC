@@ -1,0 +1,13 @@
+E:\MS.NET\Applications\Database\EFDesignerTest\ServerApp\obj\Debug\ServerApp.csprojAssemblyReference.cache
+E:\MS.NET\Applications\Database\EFDesignerTest\ServerApp\bin\Debug\ServerApp.exe.config
+E:\MS.NET\Applications\Database\EFDesignerTest\ServerApp\bin\Debug\ServerApp.exe
+E:\MS.NET\Applications\Database\EFDesignerTest\ServerApp\bin\Debug\ServerApp.pdb
+E:\MS.NET\Applications\Database\EFDesignerTest\ServerApp\bin\Debug\EntityFramework.dll
+E:\MS.NET\Applications\Database\EFDesignerTest\ServerApp\bin\Debug\EntityFramework.SqlServer.dll
+E:\MS.NET\Applications\Database\EFDesignerTest\ServerApp\bin\Debug\Sales.dll
+E:\MS.NET\Applications\Database\EFDesignerTest\ServerApp\bin\Debug\Sales.pdb
+E:\MS.NET\Applications\Database\EFDesignerTest\ServerApp\bin\Debug\EntityFramework.xml
+E:\MS.NET\Applications\Database\EFDesignerTest\ServerApp\bin\Debug\EntityFramework.SqlServer.xml
+E:\MS.NET\Applications\Database\EFDesignerTest\ServerApp\obj\Debug\ServerApp.csproj.CopyComplete
+E:\MS.NET\Applications\Database\EFDesignerTest\ServerApp\obj\Debug\ServerApp.exe
+E:\MS.NET\Applications\Database\EFDesignerTest\ServerApp\obj\Debug\ServerApp.pdb

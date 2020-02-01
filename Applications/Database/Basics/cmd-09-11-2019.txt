@@ -1,0 +1,31 @@
+sqlcmd /d Shop
+np dbquerytest.cs
+csc dbquerytest.cs
+np dbquerytest.exe.config
+dbquerytest.exe
+dir
+dbquerytest.exe
+np sqlupdatetest.cs
+csc sqlupdatetest.cs
+sqlupdatetest.exe 103
+csc sqlupdatetest.cs
+sqlupdatetest.exe 103
+sqlupdatetest.exe 108
+csc sqlupdatetest.cs
+dbquerytest.exe
+sqlupdatetest.exe 101
+dbquerytest.exe
+copy sqlupdatetest.cs sqlparamtest.cs
+np sqlparamtest.cs
+csc sqlparamtest.cs
+sqlparamtest.exe CU104 103 2
+sqlparamtest.exe CU102 106 5
+sqlparamtest.exe CU102 105 5
+np Shop.sql
+copy sqlparamtest.cs sqlstorproctest.cs
+np sqlstorproctest.cs
+csc sqlstorproctest.cs
+sqlstorproctest.exe CU101 104 5
+sqlstorproctest.exe CU105 102 3
+sqlstorproctest.exe CU103 102 3
+doskey /history > cmd-09-11-2019.txt

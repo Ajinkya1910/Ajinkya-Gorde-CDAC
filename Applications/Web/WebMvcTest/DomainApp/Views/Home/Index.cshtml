@@ -1,0 +1,41 @@
+﻿@model IEnumerable<DomainApp.Models.Visitor>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>DomainApp</title>
+</head>
+<body>
+    <h1>Registered Visitors</h1>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Visit Count</th>
+            <th>Last Visit</th>
+        </tr>
+        @foreach (var entry in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(p => entry.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(p => entry.Frequency)
+                </td>
+                <td>
+                    @Html.DisplayFor(p => entry.Recent)
+                </td>
+            </tr>
+         }    
+        </table>
+        <p>
+            @Html.ActionLink("Register your Visit", "Register")
+        </p>
+    </body>
+</html>

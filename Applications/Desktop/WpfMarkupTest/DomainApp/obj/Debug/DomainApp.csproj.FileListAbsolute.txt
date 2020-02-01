@@ -1,0 +1,14 @@
+E:\MS.NET\Applications\Desktop\WpfMarkupTest\DomainApp\bin\Debug\DomainApp.exe.config
+E:\MS.NET\Applications\Desktop\WpfMarkupTest\DomainApp\bin\Debug\DomainApp.exe
+E:\MS.NET\Applications\Desktop\WpfMarkupTest\DomainApp\bin\Debug\DomainApp.pdb
+E:\MS.NET\Applications\Desktop\WpfMarkupTest\DomainApp\obj\Debug\DomainApp.csprojAssemblyReference.cache
+E:\MS.NET\Applications\Desktop\WpfMarkupTest\DomainApp\obj\Debug\MainWindow.g.cs
+E:\MS.NET\Applications\Desktop\WpfMarkupTest\DomainApp\obj\Debug\App.g.cs
+E:\MS.NET\Applications\Desktop\WpfMarkupTest\DomainApp\obj\Debug\DomainApp_MarkupCompile.cache
+E:\MS.NET\Applications\Desktop\WpfMarkupTest\DomainApp\obj\Debug\DomainApp_MarkupCompile.lref
+E:\MS.NET\Applications\Desktop\WpfMarkupTest\DomainApp\obj\Debug\MainWindow.baml
+E:\MS.NET\Applications\Desktop\WpfMarkupTest\DomainApp\obj\Debug\DomainApp.g.resources
+E:\MS.NET\Applications\Desktop\WpfMarkupTest\DomainApp\obj\Debug\DomainApp.Properties.Resources.resources
+E:\MS.NET\Applications\Desktop\WpfMarkupTest\DomainApp\obj\Debug\DomainApp.csproj.GenerateResource.cache
+E:\MS.NET\Applications\Desktop\WpfMarkupTest\DomainApp\obj\Debug\DomainApp.exe
+E:\MS.NET\Applications\Desktop\WpfMarkupTest\DomainApp\obj\Debug\DomainApp.pdb

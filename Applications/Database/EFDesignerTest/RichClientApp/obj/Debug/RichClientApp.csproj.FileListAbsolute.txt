@@ -1,0 +1,12 @@
+E:\MS.NET\Applications\Database\EFDesignerTest\RichClientApp\bin\Debug\RichClientApp.exe.config
+E:\MS.NET\Applications\Database\EFDesignerTest\RichClientApp\bin\Debug\RichClientApp.exe
+E:\MS.NET\Applications\Database\EFDesignerTest\RichClientApp\bin\Debug\RichClientApp.pdb
+E:\MS.NET\Applications\Database\EFDesignerTest\RichClientApp\bin\Debug\Sales.dll
+E:\MS.NET\Applications\Database\EFDesignerTest\RichClientApp\bin\Debug\Sales.pdb
+E:\MS.NET\Applications\Database\EFDesignerTest\RichClientApp\obj\Debug\RichClientApp.csprojAssemblyReference.cache
+E:\MS.NET\Applications\Database\EFDesignerTest\RichClientApp\obj\Debug\RichClientApp.MainForm.resources
+E:\MS.NET\Applications\Database\EFDesignerTest\RichClientApp\obj\Debug\RichClientApp.Properties.Resources.resources
+E:\MS.NET\Applications\Database\EFDesignerTest\RichClientApp\obj\Debug\RichClientApp.csproj.GenerateResource.cache
+E:\MS.NET\Applications\Database\EFDesignerTest\RichClientApp\obj\Debug\RichClientApp.csproj.CopyComplete
+E:\MS.NET\Applications\Database\EFDesignerTest\RichClientApp\obj\Debug\RichClientApp.exe
+E:\MS.NET\Applications\Database\EFDesignerTest\RichClientApp\obj\Debug\RichClientApp.pdb

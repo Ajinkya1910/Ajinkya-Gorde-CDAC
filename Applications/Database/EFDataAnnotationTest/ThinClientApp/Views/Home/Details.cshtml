@@ -1,0 +1,51 @@
+﻿@model IEnumerable<ThinClientApp.Models.Order>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ThinClientApp</title>
+</head>
+<body>
+    <h1>Orders for Product @ViewBag.SelectedProductId</h1>
+    <table class="table" border="1">
+        <tr>
+            <th>
+                Order Date
+            </th>
+            <th>
+                Customer ID
+            </th>
+            <th>
+                Quantity
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OrderDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CustomerId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Quantity)
+                </td>
+            </tr>
+        }
+
+    </table>
+    <p>
+    <p>
+        @Html.ActionLink("List of Products", "Index")
+    </p>
+    </p>
+</body>
+</html>

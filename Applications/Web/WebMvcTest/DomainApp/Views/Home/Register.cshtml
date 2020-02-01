@@ -1,0 +1,28 @@
+﻿@model DomainApp.Models.Visitor
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>DomainApp</title>
+</head>
+<body>
+    <h1>Welcome Visitor</h1>
+    @using(Html.BeginForm())
+    {
+        <b>Name:</b>
+        @Html.EditorFor(p => Model.Name)
+        <input type="submit" value="Register"/>
+        <p>
+            @Html.ValidationMessageFor(p => p.Name)
+        </p>
+    }
+    <p>
+        @Html.ActionLink("Registered Visitors", "Index")
+    </p>
+</body>
+</html>
